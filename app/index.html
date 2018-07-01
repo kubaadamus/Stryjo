@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<div class="menu hidden">
+	<div class="nav">
+		<button>O nas</button>
+		<button>Oferta</button>
+		<button>Cennik</button>
+		<button>Galeria</button>
+		<button>Kontakt</button>
+		<button>Zaloguj się</button>
+	</div>
+</div> 
+
+<div class="header" style="min-height: 100vh;" data-parallax="scroll" data-image-src="assets/images/party_2.jpg">	
+	<div class="title">IMPREZPOL</div>
+	<div class="subtitle">IMPREZY EVENTY SZKOLENIA</div>
+	<img class="logo" src="assets/images/logo1.png"/>
+	<img class="scrolldown" src="assets/images/DownArrows2.png" alt="">
+</div>
+
+<div class="onas">
+	<div class="onas_przekladka" data-parallax="scroll" data-image-src="assets/images/rejs/1.jpg">
+		<div class="title--small">O NAS</div>
+	</div>
+	
+</div>
+
+<div class="galeria">
+
+</div>
+
+<div class="oferta">
+
+</div>
+
+<!======================================== S K R Y P T Y ======================================>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/scripts/parallax.min.js"></script>
+<script>
+	$('.header').parallax({imageSrc: 'assets/images/party_1.jpg'});
+	$('.onas_przekladka').parallax({imageSrc: 'assets/images/rejs/1.jpg'});
+</script>
+</body>
+</html>

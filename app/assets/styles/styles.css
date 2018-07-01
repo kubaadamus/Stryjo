@@ -1,0 +1,122 @@
+@import "normalize.css";
+@import "_mixins";
+
+/* ========================================== V A R I A B L E S ========================================== */
+$mainBlack: #2a2c2f;
+$Cream: #FFF8E7;
+$Cream_2: #D9C9A4;
+$Cream_3: #B29E6C;
+$Cream_4: #8C7640;
+$mainLatte: #D9C9A4;
+$mainBlue: #F5F5F5;
+$mainGreen: #E7FFF8;
+/* =============================================  F O N T S  ============================================= */
+@font-face 
+{
+    font-family: eng;
+    src: url(assets/fonts/font1/engebrechtre.ttf);
+}
+@font-face 
+{
+    font-family: water;
+    src: url(assets/fonts/font2/water.ttf);
+}
+@font-face 
+{
+    font-family: hemi;
+    src: url(assets/fonts/font3/hemi.ttf);
+}
+@-webkit-keyframes pulsate {
+    0% {bottom: 0px;}
+    50% {bottom: 50px;}
+    100% {bottom: 0px;}
+}
+/* ============================================= G L O B A L S =========================================== */
+wbr:after { content: "\00200B"; }
+.hidden{
+    display: none;
+}
+.menu{
+padding: 10px 0px;
+background-color: #cdd6ff;
+position: fixed;
+width: 100%;
+    .nav
+    {
+        padding-left: 500px;
+        display: flex;
+        justify-content: space-around;
+        button
+        {
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.555);
+        }
+    }
+}
+.header{
+    width: 100%;
+    text-align: center;
+
+
+}
+.title{
+    font-family: hemi ;
+    color: rgba(255, 255, 255, 0.855);
+    margin: 0 auto;
+    width:fit-content;
+    transform: translateY(15vh); 
+    font-size: 200px;
+    
+}
+.title--small{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-family: hemi ;
+    color: rgba(255, 255, 255, 0.855);
+    font-size: 200px;
+    transform: translateY(40%);
+    
+}
+.subtitle{
+    font-family: hemi;
+    font-size: 50px;
+    color: rgb(46, 46, 46);
+    margin: 0 auto;
+    width:fit-content; 
+    transform: translateY(-15vh); 
+}
+.logo{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width:500px;
+    transform: translateY(10vh);
+}
+.scrolldown{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(30vh);
+    width: 100px;
+    -webkit-animation: pulsate 2s ease infinite;
+    -moz-animation: pulsate 21s ease infinite;
+    animation: pulsate 2s ease infinite;
+
+}
+
+.onas{
+    
+    &_przekladka{
+        height: 400px;
+    }
+}
+.galeria{
+    background-color: rgb(29, 247, 0);
+    height: 1000px;
+}
+.oferta{
+    background-color: rgb(135, 138, 0);
+    height: 1000px;
+}
+
