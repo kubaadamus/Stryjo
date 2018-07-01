@@ -56,7 +56,16 @@ width: 100%;
 .header{
     width: 100%;
     text-align: center;
-
+}
+.flag-container{
+    position: absolute;
+    right:20px;
+    bottom:20px;
+}
+.flag{
+    position: relative;
+    width:50px;
+    height:30px;
 
 }
 .title{
@@ -75,7 +84,6 @@ width: 100%;
     font-family: hemi ;
     color: rgba(255, 255, 255, 0.855);
     font-size: 200px;
-    transform: translateY(40%);
     
 }
 .subtitle{
@@ -104,19 +112,68 @@ width: 100%;
     animation: pulsate 2s ease infinite;
 
 }
+.przekladka{
+    height: 200px; 
+}
 
 .onas{
-    
-    &_przekladka{
-        height: 400px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  background-image: url('assets/images/party_2.jpg');
+    .slideshow{
+        width: 600px;
+        background-color:red;
     }
-}
-.galeria{
-    background-color: rgb(29, 247, 0);
-    height: 1000px;
-}
-.oferta{
-    background-color: rgb(135, 138, 0);
-    height: 1000px;
+    .opis{
+        width: 60%;
+        height: 400px;
+        background-color:rgba(230, 230, 230, 0); 
+        padding:20px;
+    }   
+
+    #slideshow {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        img{
+            width:100%;
+        }
+        
+      }
+      
+      #slideshow > div {
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+      }
 }
 
+
+
+.oferta{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .slideshow{
+        width: 500px;
+        height: 400px;
+        background-color:red;
+    }
+    .opis{
+        width: 60%;
+        height: 400px;
+        background-color:rgb(243, 243, 243); 
+    }   
+}

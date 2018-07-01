@@ -483,7 +483,18 @@ width: 100%;
 .header{
     width: 100%;
     text-align: center;
+}
 
+.flag-container{
+    position: absolute;
+    right:20px;
+    bottom:20px;
+}
+
+.flag{
+    position: relative;
+    width:50px;
+    height:30px;
 
 }
 
@@ -507,8 +518,6 @@ width: 100%;
     font-family: hemi ;
     color: rgba(255, 255, 255, 0.855);
     font-size: 200px;
-    -webkit-transform: translateY(40%);
-            transform: translateY(40%);
     
 }
 
@@ -545,17 +554,86 @@ width: 100%;
 
 }
 
-.onas_przekladka{
-  height: 400px;
+.przekladka{
+    height: 200px; 
 }
 
-.galeria{
-    background-color: rgb(29, 247, 0);
-    height: 1000px;
+.onas{
+    width: 100%;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  background-image: url('assets/images/party_2.jpg');
+}
+
+.onas .slideshow{
+  width: 600px;
+  background-color:red;
+}
+
+.onas .opis{
+  width: 60%;
+  height: 400px;
+  background-color:rgba(230, 230, 230, 0);
+  padding:20px;
+}
+
+.onas #slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.onas #slideshow img{
+  width:100%;
+}
+
+.onas #slideshow > div {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .oferta{
-    background-color: rgb(135, 138, 0);
-    height: 1000px;
+    width: 100%;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;   
 }
 
+.oferta .slideshow{
+  width: 500px;
+  height: 400px;
+  background-color:red;
+}
+
+.oferta .opis{
+  width: 60%;
+  height: 400px;
+  background-color:rgb(243, 243, 243);
+}
