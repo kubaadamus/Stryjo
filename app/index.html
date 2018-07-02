@@ -18,7 +18,7 @@
 		<button>Zaloguj się</button>
 	</div>
 </div> 
-<div class="header" style="min-height: 100vh;" data-parallax="scroll" data-image-src="assets/images/party_1_small.gif">	
+<div class="header" id="scroll_0" style="min-height: 100vh;" data-parallax="scroll" data-image-src="assets/images/party_1_small.gif">	
 	<div class="title" id="maintitle">IMPREZPOL</div>
 	<div class="subtitle">IMPREZY EVENTY SZKOLENIA</div>
 	<img class="logo" src="assets/images/logo1.png"/>
@@ -31,10 +31,10 @@
 
 </div>
 <!!-----------------------------------------------------------------------O F E R T A----------------------------------------------------------------!!>
-<div class="przekladka" data-parallax="scroll" data-image-src="assets/images/rejs/1.jpg">
+<div class="przekladka" id="scroll_1" data-parallax="scroll" data-image-src="assets/images/rejs/1.jpg">
 	<div class="title--small">OFERTA</div>
 </div>
-<div class="oferta">
+<div class="oferta" id="scroll_2">
 	<div class="column">
 		<div class="icon"><img src="assets/images/logo6.png" alt=""></div>
 		<div class="oferta_title">IMPREZY</div>
@@ -95,10 +95,10 @@
 
 </div>
 <!!-----------------------------------------------------------------------O N A S----------------------------------------------------------------!!>
-<div class="przekladka" data-parallax="scroll" data-image-src="assets/images/rejs/2.jpg">
+<div class="przekladka" id="scroll_3" data-parallax="scroll" data-image-src="assets/images/rejs/2.jpg">
 	<div class="title--small">O NAS</div>
 </div>
-<div class="onas">
+<div class="onas" id="scroll_4">
 	<div class="slideshow">
 			<div id="slideshow">
 					<div>
@@ -131,10 +131,10 @@
 </div>
 <!!-----------------------------------------------------------------------G A L E R I A----------------------------------------------------------------!!>
 
-<div class="przekladka" data-parallax="scroll" data-image-src="assets/images/rejs/3.jpg">
+<div class="przekladka" id="scroll_5" data-parallax="scroll" data-image-src="assets/images/rejs/3.jpg">
 	<div class="title--small">GALERIA</div>
 </div>
-<div class="galeria transition">
+<div class="galeria transition" id="scroll_6">
 	<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/1.jpg" alt=""></div>
 	<div class="obrazek obrazek--wide transition--fast"><img src="assets/images/rejs/2.jpg" alt=""></div>
 	<div class="obrazek obrazek--wide  transition--fast"><img src="assets/images/rejs/3.jpg" alt=""></div>
@@ -156,10 +156,10 @@
 	<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/20.jpg" alt=""></div>
 </div>
 <!!-----------------------------------------------------------------------K O N T A K T----------------------------------------------------------------!!>
-<div class="przekladka" data-parallax="scroll" data-image-src="assets/images/rejs/5.jpg">
+<div class="przekladka" id="scroll_7" data-parallax="scroll" data-image-src="assets/images/rejs/5.jpg">
 	<div class="title--small">KONTAKT</div>
 </div>
-<div class="kontakt">
+<div class="kontakt" id="scroll_8">
 	Telefony, emaile, fejsbuki, tweetery, youtuby itd i rejestracja online 
 </div>
 <!======================================== S K R Y P T Y ======================================>
@@ -180,6 +180,42 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 }, 3000);
+</script>
+<script>
+	var element=0;
+
+	$(window).on('wheel', function(event){
+
+// deltaY obviously records vertical scroll, deltaX and deltaZ exist too
+if(event.originalEvent.deltaY < 0){
+  // wheeled up
+  element-=1;
+  if(element<0)
+  {
+	  element=0;
+  }
+}
+else {
+  // wheeled down
+  element+=1;
+  if(element>10)
+  {
+	  element=10;
+  }
+}
+
+var _string = "#scroll_"+element.toString();
+
+console.log(_string);
+
+
+
+$('html, body').animate({
+    scrollTop: $(_string).offset().top
+}, 200);
+
+
+});
 </script>
 </body>
 </html>

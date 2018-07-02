@@ -451,6 +451,10 @@ textarea {
 
 /* ============================================= G L O B A L S =========================================== */
 
+body{
+    overflow: hidden;
+}
+
 .transition{
 /*Animacja zwiększania brightnessa po najechaniu myszą*/
 transition-duration: 2.4s;

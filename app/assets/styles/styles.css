@@ -32,6 +32,9 @@ $mainGreen: #E7FFF8;
     100% {bottom: 0px;}
 }
 /* ============================================= G L O B A L S =========================================== */
+body{
+    overflow: hidden;
+}
 .transition{
 /*Animacja zwiększania brightnessa po najechaniu myszą*/
 -webkit-transition-duration: 2.4s;
