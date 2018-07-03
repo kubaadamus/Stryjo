@@ -8,14 +8,13 @@
 </head>
 <body>
 <!!-----------------------------------------------------------------------N A G Ł Ó W E K----------------------------------------------------------------!!>
-<div class="menu hidden">
+<div class="menu">
 	<div class="nav">
-		<button>O nas</button>
-		<button>Oferta</button>
-		<button>Cennik</button>
-		<button>Galeria</button>
-		<button>Kontakt</button>
-		<button>Zaloguj się</button>
+		<button id="home">HOME</button>
+		<button id="oferta">OFERTA</button>
+		<button id="onas">O NAS</button>
+		<button id="galeria">GALERIA</button>
+		<button id="kontakt">KONTAKT</button>
 	</div>
 </div> 
 <div class="header" id="scroll_0" style="min-height: 100vh;" data-parallax="scroll" data-image-src="assets/images/party_1_small.gif">	
@@ -35,6 +34,10 @@
 	<div class="title--small">OFERTA</div>
 </div>
 <div class="oferta" id="scroll_2">
+		<div class="imprezy_tab hidden">
+				lololo
+		</div>
+
 	<div class="column">
 		<div class="icon"><img src="assets/images/logo6.png" alt=""></div>
 		<div class="oferta_title">IMPREZY</div>
@@ -94,6 +97,8 @@
 	</div>
 
 </div>
+<!!-----------------------------------------------------------------------OTWIERANE----------------------------------------------------------------!!>
+
 <!!-----------------------------------------------------------------------O N A S----------------------------------------------------------------!!>
 <div class="przekladka" id="scroll_3" data-parallax="scroll" data-image-src="assets/images/rejs/2.jpg">
 	<div class="title--small">O NAS</div>
@@ -135,25 +140,37 @@
 	<div class="title--small">GALERIA</div>
 </div>
 <div class="galeria transition" id="scroll_6">
-	<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/1.jpg" alt=""></div>
-	<div class="obrazek obrazek--wide transition--fast"><img src="assets/images/rejs/2.jpg" alt=""></div>
-	<div class="obrazek obrazek--wide  transition--fast"><img src="assets/images/rejs/3.jpg" alt=""></div>
-	<div class="obrazek obrazek--wide transition--fast"><img src="assets/images/rejs/4.jpg" alt=""></div>
-	<div class="obrazek obrazek--narrow  transition--fast"><img src="assets/images/rejs/5.jpg" alt=""></div>
-	<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/6.jpg" alt=""></div>
-	<div class="obrazek obrazek--extra_narrow transition--fast"><img src="assets/images/rejs/8.jpg" alt=""></div>
-	<div class="obrazek obrazek--extra_narrow transition--fast"><img src="assets/images/rejs/9.jpg" alt=""></div>
-	<div class="obrazek obrazek--narrow  transition--fast"><img src="assets/images/rejs/10.jpg" alt=""></div>
-	<div class="obrazek obrazek--wide transition--fast"><img src="assets/images/rejs/22.jpg" alt=""></div>
-	<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/12.jpg" alt=""></div>
-	<div class="obrazek obrazek--extra_narrow transition--fast"><img src="assets/images/rejs/13.jpg" alt=""></div>
-	<div class="obrazek obrazek--extra_narrow transition--fast"><img src="assets/images/rejs/14.jpg" alt=""></div>
-	<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/15.jpg" alt=""></div>
-	<div class="obrazek obrazek--wide  transition--fast"><img src="assets/images/rejs/16.jpg" alt=""></div>
-	<div class="obrazek obrazek--wide  transition--fast"><img src="assets/images/rejs/17.jpg" alt=""></div>
-	<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/18.jpg" alt=""></div>
-	<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/19.jpg" alt=""></div>
-	<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/20.jpg" alt=""></div>
+
+	<div class="wrapper">
+			<div id="fader"></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/1.jpg" alt=""></div>
+			<div class="obrazek obrazek--wide transition--fast"><img src="assets/images/rejs/2.jpg" alt=""></div>
+			<div class="obrazek obrazek--wide  transition--fast"><img src="assets/images/rejs/3.jpg" alt=""></div>
+			<div class="obrazek obrazek--wide transition--fast"><img src="assets/images/rejs/4.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow  transition--fast"><img src="assets/images/rejs/5.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/6.jpg" alt=""></div>
+			<div class="obrazek obrazek--extra_narrow transition--fast"><img src="assets/images/rejs/8.jpg" alt=""></div>
+			<div class="obrazek obrazek--extra_narrow transition--fast"><img src="assets/images/rejs/9.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow  transition--fast"><img src="assets/images/rejs/10.jpg" alt=""></div>
+			<div class="obrazek obrazek--wide transition--fast"><img src="assets/images/rejs/22.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/12.jpg" alt=""></div>
+			<div class="obrazek obrazek--extra_narrow transition--fast"><img src="assets/images/rejs/13.jpg" alt=""></div>
+			<div class="obrazek obrazek--extra_narrow transition--fast"><img src="assets/images/rejs/14.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/15.jpg" alt=""></div>
+			<div class="obrazek obrazek--wide  transition--fast"><img src="assets/images/rejs/16.jpg" alt=""></div>
+			<div class="obrazek obrazek--wide  transition--fast"><img src="assets/images/rejs/17.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/18.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/19.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/20.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/23.jpg" alt=""></div>
+			<div class="obrazek obrazek--wide  transition--fast"><img src="assets/images/rejs/24.jpg" alt=""></div>
+			<div class="obrazek obrazek--wide  transition--fast"><img src="assets/images/rejs/25.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/26.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/27.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/28.jpg" alt=""></div>
+			<div class="obrazek obrazek--narrow transition--fast"><img src="assets/images/rejs/29.jpg" alt=""></div>
+	</div>
+	
 </div>
 <!!-----------------------------------------------------------------------K O N T A K T----------------------------------------------------------------!!>
 <div class="przekladka" id="scroll_7" data-parallax="scroll" data-image-src="assets/images/rejs/5.jpg">
@@ -182,30 +199,32 @@ setInterval(function() {
 }, 3000);
 </script>
 <script>
+	var scrolling = true;
 	var element=0;
 
 	$(window).on('wheel', function(event){
 
 // deltaY obviously records vertical scroll, deltaX and deltaZ exist too
 if(event.originalEvent.deltaY < 0){
-  // wheeled up
-  element-=1;
-  if(element<0)
+  if(scrolling==true)
   {
-	  element=0;
+	element-=1;
+  	if(element<0){element=0;}
   }
 }
 else {
-  // wheeled down
-  element+=1;
-  if(element>10)
+  if(scrolling==true)
   {
-	  element=10;
+  element+=1;
+  if(element>8){element=8;}
   }
+
+
 }
 
+if(scrolling)
+{
 var _string = "#scroll_"+element.toString();
-
 console.log(_string);
 
 
@@ -214,8 +233,58 @@ $('html, body').animate({
     scrollTop: $(_string).offset().top
 }, 200);
 
+}
+$('#home, #oferta, #onas, #galeria, #kontakt').removeClass("czerwone");
 
+switch(element)
+{
+case 0:{
+	$('#home').addClass("czerwone");
+break;}
+case 1:{
+
+break;}
+case 2:{
+	$('#oferta').addClass("czerwone");
+break;}
+case 3:{
+
+break;}
+case 4:{
+	$('#onas').addClass("czerwone");
+break;}
+case 5:{
+
+break;}
+case 6:{
+	$('#galeria').addClass("czerwone");
+break;}
+case 7:{
+
+break;}
+case 8:{
+	$('#kontakt').addClass("czerwone");
+break;}
+
+}
 });
+
+$( document ).ready(function() {
+	$('#home').addClass("czerwone");
+});
+
+$(document).click(function(e) {
+	if($(e.target.parentNode).hasClass("obrazek"))
+	{
+		$(e.target.parentNode).toggleClass("zmodyfikowany");
+		$('#fader').toggleClass("fader");
+		scrolling=!scrolling;
+	}
+});
+
+
+
+
 </script>
 </body>
 </html>
