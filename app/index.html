@@ -17,7 +17,7 @@
 		<button id="kontakt">KONTAKT</button>
 	</div>
 </div> 
-<div class="header" id="scroll_0" style="min-height: 100vh;" data-parallax="scroll" data-image-src="assets/images/party_1_small.gif">	
+<div class="header" id="scroll_0" style="min-height: 100vh;" data-parallax="scroll" data-image-src="assets/images/party_1.webp">	
 	<div class="title" id="maintitle">IMPREZPOL</div>
 	<div class="subtitle">IMPREZY EVENTY SZKOLENIA</div>
 	<img class="logo" src="assets/images/logo1.png"/>
@@ -28,6 +28,10 @@
 			<img class="flag" src="assets/images/eng.png" alt="">
 	</div>
 
+</div>
+<div class="loading" id="loading">
+	<div class="bar centererd rotating">
+	</div>
 </div>
 <!!-----------------------------------------------------------------------O F E R T A----------------------------------------------------------------!!>
 <div class="przekladka" id="scroll_1" data-parallax="scroll" data-image-src="assets/images/rejs/1.jpg">
@@ -183,7 +187,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/scripts/parallax.min.js"></script>
 <script>
-	$('.header').parallax({imageSrc: 'assets/images/party_1.jpg'});
+	$('.header').parallax({imageSrc: 'assets/images/party_1.webp'});
 	$('.onas_przekladka').parallax({imageSrc: 'assets/images/rejs/1.jpg'});
 </script>
 <script>
@@ -270,7 +274,12 @@ break;}
 });
 
 $( document ).ready(function() {
+
+});
+
+$(window).on("load", function() {
 	$('#home').addClass("czerwone");
+	$('#loading').fadeOut(2000);
 });
 
 $(document).click(function(e) {
