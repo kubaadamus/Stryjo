@@ -443,6 +443,12 @@ textarea {
     src: url(assets/fonts/font3/hemi.ttf);
 }
 
+@font-face 
+{
+    font-family: kaligrafia;
+    src: url(assets/fonts/font4/kaligrafia.otf);
+}
+
 @-webkit-keyframes pulsate {
     0% {bottom: 0px;}
     50% {bottom: 50px;}
@@ -480,6 +486,39 @@ wbr:after { content: "\00200B"; }
             transform: translateY(-50%);
 }
 
+.hoverable:hover{
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.testimonials{
+    width:400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    margin-right: 6vw;
+    margin-top: 50vh;
+
+}
+
+.testimonials .photo{
+  width:200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom:30px;
+}
+
+.testimonials .photo img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.testimonials .text{
+  color: white;
+  font-family: kaligrafia;
+  text-align: center;
+}
+
 /* ============================================= S E K C J E =========================================== */
 
 .menu{
@@ -514,6 +553,34 @@ width: 100%;
 
 .menu .nav .czerwone{
   background-color: rgba(160, 11, 11, 0.493);
+}
+
+.map{
+    height:80vh;
+    width:60px;
+    position: fixed;
+    right:5px;
+    top:100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.map .icon{
+  width:60px;
+  height:60px;
+  margin: 0 auto;
+}
+
+.map .icon img{
+  width: 100%;
+  height:100%;
 }
 
 .header{
@@ -628,6 +695,13 @@ width: 100%;
             transform: translateY(10vh);
 }
 
+.terminy{
+    font-size: 2rem;
+    color:rgba(255, 255, 255, 0.589);
+    -webkit-transform: translateY(180px);
+            transform: translateY(180px);
+}
+
 .scrolldown{
     position: relative;
     display: block;
@@ -663,15 +737,18 @@ width: 100%;
 }
 
 .onas .slideshow{
-  width: 600px;
+  width: 50%;
   background-color:red;
 }
 
 .onas .opis{
-  width: 60%;
-  height: 400px;
-  padding:20px;
+  width: 20%;
+  padding: 90px 80px 90px 80px;
   color: white;
+  background-color: rgba(0, 0, 0, 0.486);
+  font-family: kaligrafia;
+  text-indent: 1rem;
+  text-align: justify;
 }
 
 .onas #slideshow {
@@ -808,7 +885,7 @@ width: 100%;
 }
 
 .galeria .wrapper .obrazek--extra_narrow{
-  width:96px;
+  width:98px;
 }
 
 .galeria .wrapper .obrazek--extra_narrow img{
@@ -828,8 +905,6 @@ width: 100%;
   width: 100%;
 }
 
-.galeria .wrapper .obrazek:hover{}
-
 .galeria .wrapper .zmodyfikowany{
   position:fixed;
   top: 20%;
@@ -845,9 +920,88 @@ width: 100%;
 }
 
 .kontakt{
-    background-image: url('assets/images/background_1.jpg');
-    background-size: cover;
-    height:500px;
+    background-color: rgb(9, 22, 39);
+    height:200px;
     padding:50px;
     color:white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.kontakt .dane{
+  width:30%;
+  height:200px;
+  background-color:rgba(0, 0, 0, 0.671);
+  padding:20px;
+  font-family:hemi;
+  font-size:1.2rem;
+}
+
+.kontakt .formularz{
+  display: block;
+  width:30%;
+  height:200px;
+  background-color: black;
+  padding:20px;
+}
+
+.kontakt .formularz form{
+  width:-webkit-fit-content;
+  width:-moz-fit-content;
+  width:fit-content;
+  margin: 0 auto;
+}
+
+.kontakt .formularz button{
+  display: block;
+  width:100px;
+  margin: 0 auto;
+}
+
+.media{
+    background-color: rgb(9, 22, 39);
+    padding-bottom: 30px;
+}
+
+.media .ikony{
+  width:300px;
+  margin: 0 auto;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:row;
+          flex-direction:row;
+  -ms-flex-pack:distribute;
+      justify-content:space-around;
+}
+
+.media .ikony .ikona{
+  width:50px;
+  height:50px;
+}
+
+.media .ikony .ikona img{
+  width:100%;
+  height:100%;
+}
+
+.stopka{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+.vl{
+    width:2px;
+    height: 200px;
+    background-color: white;
 }
