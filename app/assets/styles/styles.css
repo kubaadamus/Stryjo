@@ -4,7 +4,7 @@
 @import "_fonts.css";
 @import "_animations.css";
 /* ============================================= G L O B A L S =========================================== */
-
+button:focus { outline: none; }
 p {
     margin: 0px;
 }
@@ -49,20 +49,25 @@ wbr:after {
     height: 100vh;
     overflow: hidden;
     .menu {
+        width:100%;
         display: flex;
-        justify-content: center;
-        position: absolute;
-        left: 50%;
-        padding: 20px;
-        transform: translateX(-50%);
-        height: 50px;
+        position: fixed;
         background-color: rgba(0, 0, 0, 0.7);
-        border: 1px solid white;
-        border-top: none;
+        background-image:url("assets/images/steel.jpg");
+        justify-content:flex-end;
+        border:none;
+        border-bottom: 1px solid white;
+        z-index: 100;
         button {
             background-color: transparent;
             border: none;
             color: white;
+            padding:20px;
+            &:hover{
+                text-decoration: underline;
+                background-color:$mainRed;
+            }
+
         }
     }
     .ofertaBtn {
@@ -72,9 +77,18 @@ wbr:after {
         left: 50%;
         transform: translateX(-50%);
         font-size: 2rem;
-        background-color: rgb(0, 0, 0);
+        font-family: hemi;
+        background-color: transparent;
         color:white;
         border: 2px solid white;
+        -webkit-transition: color 300ms linear;
+        -ms-transition: color 300ms linear;
+        transition: color 300ms linear;
+        &:hover{
+            color:$mainRed;
+            border-color:$mainRed;
+        }
+
     }
     img {
         position: fixed;
@@ -84,7 +98,7 @@ wbr:after {
     }
     .logo {
         position: absolute;
-        top: 20vh;
+        top: 25vh;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -93,7 +107,7 @@ wbr:after {
         #main {
             font-size: 11rem;
             .red {
-                color: rgb(189, 0, 0);
+                color: $mainRed;
             }
         }
         #sub {
@@ -102,6 +116,18 @@ wbr:after {
         #naucz {
             font-size: 2rem;
         }
+    }
+    .opis{
+        font-family: hemi;
+        color:white;
+        width:500px;
+        text-align: justify;
+        text-indent: 2rem;
+        line-height: 2rem;
+        position: absolute;
+        right:10%;
+        bottom:10%;
+        font-size: 1.5rem;
     }
 }
 .section_title{
@@ -114,12 +140,17 @@ wbr:after {
 }
 
 .oferta {
-    font-size: 3rem;
+    font-size: 1rem;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.85);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+100,000000+100&0+1,1+14,1+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 1%, rgba(0,0,0,1) 14%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 14%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 14%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 200px;
     p {
         font-family: hemi;
         color: white;
@@ -129,14 +160,17 @@ wbr:after {
         width: 100%;
     }
     .section {
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: center;
         background-color: transparent;
         padding:10px;
+        max-width: 1000px;
+        font-size: 1.5rem;
         &--photo {
-            width: 400px;
-            height: 300px;
+            width: 300px;
+            height: 200px;
             overflow: hidden;
         }
         &--text {
@@ -145,6 +179,7 @@ wbr:after {
             &>p
             {
                     transform:translateY(50%);
+                    height:fit-content;
             }
         }
     }
