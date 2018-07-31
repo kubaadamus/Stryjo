@@ -1,365 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="styles.css">
-<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
 	<title></title>
 </head>
+
 <body>
-<!!-----------------------------------------------------------------------N A G Ł Ó W E K----------------------------------------------------------------!!>
-<div class="menu">
-	<div class="nav">
-		<button id="home">HOME</button>
-		<button id="oferta">OFERTA</button>
-		<button id="onas">O NAS</button>
-		<button id="galeria">GALERIA</button>
-		<button id="kontakt">KONTAKT</button>
+	<div class="loading" id="loading">
+		<div class="bar centererd rotating"></div>
 	</div>
-</div> 
-<div class="map">
-	<div class="icon"><img src="assets/images/home.jpg" alt=""></div>
-	<div class="icon"><img src="assets/images/hands.jpg" alt=""></div>
-	<div class="icon"><img src="assets/images/about.png" alt=""></div>
-	<div class="icon"><img src="assets/images/gallery.jpg" alt=""></div>
-	<div class="icon"><img src="assets/images/contact.jpg" alt=""></div>
-</div>
-<div class="header" id="scroll_0" style="min-height: 100vh;" data-parallax="scroll" data-image-src="assets/images/party_1.webp">	
-	<div class="title" id="maintitle">IMPREZPOL</div>
-	<div class="subtitle">IMPREZY EVENTY SZKOLENIA</div>
-	<img class="logo" src="assets/images/logo1.png"/>
-	<div class="terminy">Sprawdź dostępne terminy</div>
-	<img class="scrolldown" src="assets/images/DownArrows2.png" alt="">
-	<div class="flag-container">
-			<img class="flag" src="assets/images/pl.gif" alt="">
-			<img class="flag" src="assets/images/de.jpg" alt="">
-			<img class="flag" src="assets/images/eng.png" alt="">
+	<div class="landingPage">
+		<img src="assets/images/m4a1.jpg" alt="">
+		<div class="menu">
+			<button>HOME</button>
+			<button>OFERTA</button>
+			<button>O NAS</button>
+			<button>GALERIA</button>
+			<button>KONTAKT</button>
+		</div>
+		<div class="logo">
+			<p id="main">IMPREZP
+				<span class="red">`</span> L</p>
+			<p id="sub">SZKOLENIA STRZELECKIE</p>
+			<p id="naucz">Naucz się strzelać pod okiem profesjonalisty</p>
+		</div>
+		<button class="ofertaBtn glass">POZNAJ OFERTĘ</button>
 	</div>
 
-</div>
-<div class="loading" id="loading">
-	<div class="bar centererd rotating">
-	</div>
-</div>
-<!!-----------------------------------------------------------------------O F E R T A----------------------------------------------------------------!!>
-<div class="przekladka" id="scroll_1" data-parallax="scroll" data-image-src="assets/images/rejs/1.jpg">
-	<div class="title--small">OFERTA</div>
-	<div class="testimonials hidden">
-		<div class="photo">
-			<img src="assets/images/random.jpg" alt="">
+	<div class="oferta">
+		<div class="section_title">
+			<p>Zabierz swoją ekipę znajomych lub rodzinę i przeżyj przygodę obcując z nowoczesną bronią pod okiem dowswiadczonego instruktora.</p>
 		</div>
-		<div class="text">
-			<p>
-				"To była najlepsza impreza jaką pamiętam!"
-				<br/><br/>
-				- Domyślny Koleś
-			</p> 
-		</div>
-	</div>
-</div>
-<div class="oferta" id="scroll_2">
-		<div class="imprezy_tab hidden">
-				lololo
-		</div>
-
-	<div class="column">
-		<div class="icon"><img src="assets/images/logo6.png" alt=""></div>
-		<div class="oferta_title">IMPREZY</div>
-		<div class="oferta_opis">
-			<p>
-			Imprezy takie siakie owiakie, jesteśmy fajni i zagralismy tyle a tyle imprez
-			Imprezy takie siakie owiakie, jesteśmy fajni i zagralismy tyle a tyle imprez
-			Imprezy takie siakie owiakie, jesteśmy fajni i zagralismy tyle a tyle imprez
-			</p>
-			<p>
-			Gdzie dojezdżamy, polega na tym i na tamtym blablabla
-			Gdzie dojezdżamy, polega na tym i na tamtym blablabla
-			Gdzie dojezdżamy, polega na tym i na tamtym blablabla
-			</p>
-			<button>
-					WIĘCEJ
-			</button>
-		</div>
-	</div>
-	<div class="column">
-			<div class="icon"><img src="assets/images/logo.jpg" alt=""></div>
-			<div class="oferta_title">EVENTY</div>
-			<div class="oferta_opis">
-				<p>
-				Imprezy takie siakie owiakie, jesteśmy fajni i zagralismy tyle a tyle imprez
-				Imprezy takie siakie owiakie, jesteśmy fajni i zagralismy tyle a tyle imprez
-				Imprezy takie siakie owiakie, jesteśmy fajni i zagralismy tyle a tyle imprez
-				</p>
-				<p>
-				Gdzie dojezdżamy, polega na tym i na tamtym blablabla
-				Gdzie dojezdżamy, polega na tym i na tamtym blablabla
-				Gdzie dojezdżamy, polega na tym i na tamtym blablabla
-				</p>
-				<button>
-						WIĘCEJ
-				</button>
+		<div class="section">
+			<div class="section section--photo">
+				<img src="assets/images/blueprint.jpg" alt="" class="">
 			</div>
+			<div class="section section--text">
+				<p>Naucz się bezpiecznie obsługiwać nowoczesną broń małokalibrową</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="section section--photo">
+				<img src="assets/images/shooting-range.jpg" alt="" class="">
+			</div>
+			<div class="section section--text">
+				<p>Sprawdź swoje siły na profesjonalnej strzelnicy</p>
+			</div>
+
+		</div>
+		<div class="section">
+			<div class="section section--photo">
+				<img src="assets/images/campfire.jpeg" alt="" class="">
+			</div>
+			<div class="section section--text">
+				<p>Wieczorem wypocznij w rodzinnej atmosferze przy grillu</p>
+			</div>
+		</div>
 	</div>
-	<div class="column">
-				<div class="icon"><img src="assets/images/gun.png" alt=""></div>
-				<div class="oferta_title">SZKOLENIA</div>
-				<div class="oferta_opis">
-					<p>
-					Imprezy takie siakie owiakie, jesteśmy fajni i zagralismy tyle a tyle imprez
-					Imprezy takie siakie owiakie, jesteśmy fajni i zagralismy tyle a tyle imprez
-					Imprezy takie siakie owiakie, jesteśmy fajni i zagralismy tyle a tyle imprez
-					</p>
-					<p>
-					Gdzie dojezdżamy, polega na tym i na tamtym blablabla
-					Gdzie dojezdżamy, polega na tym i na tamtym blablabla
-					Gdzie dojezdżamy, polega na tym i na tamtym blablabla
-					</p>
-					<button>
-						WIĘCEJ
-					</button>
+	<div class="arsenal">
+		<div class="arsenal_wrapper">
+			<div class="top">
+				<div class="photo">
+					<img src="assets/images/m4a1-arsenal.jpg" alt="">
 				</div>
-	</div>
-
-</div>
-<!!-----------------------------------------------------------------------OTWIERANE----------------------------------------------------------------!!>
-
-<!!-----------------------------------------------------------------------O N A S----------------------------------------------------------------!!>
-<div class="przekladka" id="scroll_3" data-parallax="scroll" data-image-src="assets/images/rejs/2.jpg">
-	<div class="title--small">O NAS</div>
-</div>
-<div class="onas" id="scroll_4">
-	<div class="slideshow">
-			<div id="slideshow">
-					<div>
-						<img src="assets/images/rejs/1.jpg">
-					</div>
-					<div>
-						<img src="assets/images/rejs/2.jpg">
-					</div>
-					<div>
-						<img src="assets/images/rejs/3.jpg">
-					</div>
-				 </div>
-	</div>
-	<div class="opis">
-		<p>
-				Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla 
-				Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla 
-				Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla 
-				Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla 
-				Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla 
-		</p>
-
-	</div>
-</div>
-<!!-----------------------------------------------------------------------G A L E R I A----------------------------------------------------------------!!>
-
-<div class="przekladka" id="scroll_5" data-parallax="scroll" data-image-src="assets/images/rejs/3.jpg">
-	<div class="title--small">GALERIA</div>
-</div>
-<div class="galeria transition" id="scroll_6">
-
-	<div class="wrapper">
-			<div id="fader"></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/1.jpg" alt=""></div>
-			<div class="obrazek obrazek--wide transition--fast hoverable"><img src="assets/images/rejs/2.jpg" alt=""></div>
-			<div class="obrazek obrazek--wide  transition--fast hoverable"><img src="assets/images/rejs/3.jpg" alt=""></div>
-			<div class="obrazek obrazek--wide transition--fast hoverable"><img src="assets/images/rejs/4.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow  transition--fast hoverable"><img src="assets/images/rejs/5.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/6.jpg" alt=""></div>
-			<div class="obrazek obrazek--extra_narrow transition--fast hoverable"><img src="assets/images/rejs/8.jpg" alt=""></div>
-			<div class="obrazek obrazek--extra_narrow transition--fast hoverable"><img src="assets/images/rejs/9.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow  transition--fast hoverable"><img src="assets/images/rejs/10.jpg" alt=""></div>
-			<div class="obrazek obrazek--wide transition--fast hoverable"><img src="assets/images/rejs/22.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/12.jpg" alt=""></div>
-			<div class="obrazek obrazek--extra_narrow transition--fast hoverable"><img src="assets/images/rejs/13.jpg" alt=""></div>
-			<div class="obrazek obrazek--extra_narrow transition--fast hoverable"><img src="assets/images/rejs/14.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/15.jpg" alt=""></div>
-			<div class="obrazek obrazek--wide  transition--fast hoverable"><img src="assets/images/rejs/16.jpg" alt=""></div>
-			<div class="obrazek obrazek--wide  transition--fast hoverable"><img src="assets/images/rejs/17.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/18.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/19.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/20.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/23.jpg" alt=""></div>
-			<div class="obrazek obrazek--wide  transition--fast hoverable"><img src="assets/images/rejs/24.jpg" alt=""></div>
-			<div class="obrazek obrazek--wide  transition--fast hoverable"><img src="assets/images/rejs/25.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/26.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/27.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/28.jpg" alt=""></div>
-			<div class="obrazek obrazek--narrow transition--fast hoverable"><img src="assets/images/rejs/29.jpg" alt=""></div>
-	</div>
-	
-</div>
-<!!-----------------------------------------------------------------------K O N T A K T----------------------------------------------------------------!!>
-<div class="przekladka" id="scroll_7" data-parallax="scroll" data-image-src="assets/images/rejs/5.jpg">
-	<div class="title--small">KONTAKT</div>
-</div>
-<div class="kontakt" id="scroll_8">
-	<div class="dane">
-		Telefon: 123 456 789 [Maciej A.]
-		<br/><br/>
-		Telefon 2: 123 456 789 [Osoba X.]
-		<br/><br/>
-		Email:   lubieplacki.gmail.com
-	</div>
-	<div class="vl"></div>
-	<div class="formularz">
-		<center>Napisz do nas
-		<form action="">
-			<label for="">Email</label><br/>
-			<input type="text"  maxlength="30" style="width:300px">
-			<br/>
-			<label for="">Treść</label><br/>
-			<textarea rows="4" cols="30" style="width:300px" type="text"></textarea>
-			<br/>
-			<button>WYŚLIJ</button>
-		</form>
-	</center>
-	</div>
-</div>
-
-<div class="media">
-		<div class="ikony">
-			<div class="ikona hoverable"><img src="assets/images/facebook.png" alt=""></div>
-			<div class="ikona hoverable"><img src="assets/images/gmail.png" alt=""></div>
-			<div class="ikona hoverable"><img src="assets/images/tweeter.png" alt=""></div>
+				<div class="ui">
+					<button class="indent_3">M4A1</button>
+					<button class="indent_2">POMPA</button>
+					<button class="indent_1">MOSIN</button>
+					<button class="indent_2">GLOCK</button>
+					<button class="indent_3">BAZUKA</button>
+				</div>
+			</div>
+			<div class="weaponInfo">
+				<p>Bron kalibru xx strzela pociskami takimi i siakimi z prędkoscia wylotowa tyle a tyle m/s. Wazy i ma takie i takie wymiary.
+					Używana przez Chucka Norrisa do polowania na kosmitow.</p>
+			</div>
 		</div>
 
 	</div>
-<div class="stopka">
-All rights reserved Adamus Family 2018
-</div>
+	<div class="gallery">
+		<div class="images">
+			<img src="assets/images/family.jpg" alt="">
+		</div>
+	</div>
+	<div class="contact">
+
+	</div>
+</body>
+
 <!======================================== S K R Y P T Y ======================================>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="assets/scripts/parallax.min.js"></script>
-<script>
-	$('.header').parallax({imageSrc: 'assets/images/party_1.jpg'});
-	$('.onas_przekladka').parallax({imageSrc: 'assets/images/rejs/1.jpg'});
-</script>
-<script>
-	$("#slideshow > div:gt(0)").hide();
+<script src="assets/scripts/onload.js"></script>
+<script src="assets/scripts/menu.js"></script>
 
-setInterval(function() {
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-}, 3000);
-</script>
-<script>
-	var scrolling = true;
-	var element=0;
-
-	$(window).on('wheel', function(event){
-		scrollPage(event);
-	});
-
-	$(window).keydown(function(event) {
-
-		if(event.which==87 || event.which==38)
-		{
-			element--;
-			scrollPage(event);
-		}
-		if(event.which==83 || event.which==40)
-		{
-			element++;
-			scrollPage(event);
-		}
-	});
-	
-	
-function scrollPage(event)
-{
-
-// deltaY obviously records vertical scroll, deltaX and deltaZ exist too
-if(event.originalEvent.deltaY < 0){
-  if(scrolling==true)
-  {
-	element-=1;
-
-  }
-}
-if(event.originalEvent.deltaY > 0) {
-  if(scrolling==true)
-  {
-  element+=1;
-
-  }
-}
-
-  	if(element<0){element=0;}
-	if(element>8){element=8;}
-if(scrolling)
-{
-var _string = "#scroll_"+element.toString();
-console.log(_string);
-
-
-
-$('html, body').animate({
-    scrollTop: $(_string).offset().top
-}, 200);
-
-}
-$('#home, #oferta, #onas, #galeria, #kontakt').removeClass("czerwone");
-
-switch(element)
-{
-case 0:{
-	$('#home').addClass("czerwone");
-break;}
-case 1:{
-
-break;}
-case 2:{
-	$('#oferta').addClass("czerwone");
-break;}
-case 3:{
-
-break;}
-case 4:{
-	$('#onas').addClass("czerwone");
-break;}
-case 5:{
-
-break;}
-case 6:{
-	$('#galeria').addClass("czerwone");
-break;}
-case 7:{
-
-break;}
-case 8:{
-	$('#kontakt').addClass("czerwone");
-break;}
-
-}
-};
-
-$( document ).ready(function() {
-
-});
-
-$(window).on("load", function() {
-	$('#home').addClass("czerwone");
-	$('#loading').fadeOut(2000);
-});
-
-$(document).click(function(e) {
-	if($(e.target.parentNode).hasClass("obrazek"))
-	{
-		$(e.target.parentNode).toggleClass("zmodyfikowany");
-		$('#fader').toggleClass("fader");
-		scrolling=!scrolling;
-	}
-});
-
-
-
-
-</script>
-</body>
 </html>

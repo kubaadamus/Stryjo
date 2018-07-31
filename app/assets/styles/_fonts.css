@@ -1,0 +1,20 @@
+@font-face 
+{
+    font-family: eng;
+    src: url(assets/fonts/font1/engebrechtre.ttf);
+}
+@font-face 
+{
+    font-family: water;
+    src: url(assets/fonts/font2/water.ttf);
+}
+@font-face 
+{
+    font-family: hemi;
+    src: url(assets/fonts/font3/hemi2.ttf);
+}
+@font-face 
+{
+    font-family: kaligrafia;
+    src: url(assets/fonts/font4/kaligrafia.otf);
+}
