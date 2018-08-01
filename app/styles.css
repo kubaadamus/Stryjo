@@ -526,6 +526,15 @@ wbr:after {
 
 /* ============================================= S E K C J E =========================================== */
 
+.campfire{
+    position: fixed;
+    width:1200px;
+    height:1200px;
+    z-index: -200;
+    left:-200px;
+    top:-200px;
+}
+
 .landingPage {
     position: relative;
     width: 100%;
@@ -581,7 +590,7 @@ wbr:after {
   border-color:rgb(189, 0, 0);
 }
 
-.landingPage img {
+.landingPage .m4a1 {
   position: fixed;
   z-index: -100;
   min-width: 100vw;
@@ -624,8 +633,12 @@ wbr:after {
   line-height: 2rem;
   position: absolute;
   right:10%;
-  bottom:10%;
+  bottom:120px;
   font-size: 1.5rem;
+}
+
+.landingPage .opis p{
+  padding-bottom:20px;
 }
 
 .section_title{
@@ -640,8 +653,9 @@ wbr:after {
 .oferta {
     font-size: 1rem;
     position: relative;
+    min-height: 100vh;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+100,000000+100&0+1,1+14,1+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,1) 14%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -650,8 +664,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding-top: 200px;
 }
 

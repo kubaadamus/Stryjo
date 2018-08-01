@@ -21,3 +21,11 @@ var Menu_Down = false;
 
         }
 });
+
+(window).addEventListener("scroll", function (e) {
+    if($(window).scrollTop()>250 && !Menu_Down)
+    {
+        $(".menu").slideUp("slow");
+    }
+
+});
