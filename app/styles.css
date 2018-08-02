@@ -484,7 +484,9 @@ textarea {
 
 /* ============================================= G L O B A L S =========================================== */
 
-button:focus { outline: none; }
+button:focus {
+    outline: none;
+}
 
 p {
     margin: 0px;
@@ -492,10 +494,6 @@ p {
 
 wbr:after {
     content: "\00200B";
-}
-
-.hidden {
-    display: none;
 }
 
 .centererd {
@@ -526,13 +524,23 @@ wbr:after {
 
 /* ============================================= S E K C J E =========================================== */
 
-.campfire{
+.campfire {
     position: fixed;
-    width:1200px;
-    height:1200px;
+    width: 1200px;
+    height: 1200px;
     z-index: -200;
-    left:-200px;
-    top:-200px;
+    left: -200px;
+    top: -200px;
+}
+
+#sub {
+    font-size: 4rem;
+}
+
+#sub_2 {
+    font-size: 2rem;
+    margin:0 auto;
+    font-family: hemi;
 }
 
 .landingPage {
@@ -543,17 +551,18 @@ wbr:after {
 }
 
 .landingPage .menu {
-  width:100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
-  background-image:url("assets/images/steel.jpg");
-  -webkit-box-pack:end;
-      -ms-flex-pack:end;
-          justify-content:flex-end;
-  border:none;
+  background-image: url("assets/images/steel.jpg");
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 40px;
+  border: none;
   border-bottom: 1px solid white;
   z-index: 100;
 }
@@ -562,32 +571,32 @@ wbr:after {
   background-color: transparent;
   border: none;
   color: white;
-  padding:20px;
+  padding: 20px;
 }
 
-.landingPage .menu button:hover{
+.landingPage .menu button:hover {
   text-decoration: underline;
-  background-color:rgb(189, 0, 0);
+  background-color: rgb(189, 0, 0);
 }
 
 .landingPage .ofertaBtn {
   position: absolute;
   padding: 20px 40px;
-  bottom: 120px;
+  bottom: 30px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   font-size: 2rem;
   font-family: hemi;
   background-color: transparent;
-  color:white;
+  color: white;
   border: 2px solid white;
   transition: color 300ms linear;
 }
 
-.landingPage .ofertaBtn:hover{
-  color:rgb(189, 0, 0);
-  border-color:rgb(189, 0, 0);
+.landingPage .ofertaBtn:hover {
+  color: rgb(189, 0, 0);
+  border-color: rgb(189, 0, 0);
 }
 
 .landingPage .m4a1 {
@@ -599,6 +608,7 @@ wbr:after {
 
 .landingPage .logo {
   position: absolute;
+  width: 100%;
   top: 25vh;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -612,54 +622,50 @@ wbr:after {
   font-size: 11rem;
 }
 
-.landingPage .logo #main .red {
-  color: rgb(189, 0, 0);
-}
-
-.landingPage .logo #sub {
-  font-size: 3rem;
-}
-
 .landingPage .logo #naucz {
   font-size: 2rem;
 }
 
-.landingPage .opis{
-  font-family: hemi;
-  color:white;
-  width:500px;
-  text-align: justify;
+.landingPage .opis {
+  color: white;
+  width: 540px;
+  font-weight: 100;
   text-indent: 2rem;
   line-height: 2rem;
   position: absolute;
-  right:10%;
-  bottom:120px;
+  right: 10%;
+  bottom: 120px;
   font-size: 1.5rem;
 }
 
-.landingPage .opis p{
-  padding-bottom:20px;
+.landingPage .opis p {
+  padding-bottom: 20px;
 }
 
-.section_title{
+.section_title {
     font-family: hemi;
     color: white;
     text-align: center;
     font-size: 3rem;
     max-width: 50%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .oferta {
-    font-size: 1rem;
-    position: relative;
-    min-height: 100vh;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+100,000000+100&0+1,1+14,1+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    font-size: 1.2rem;
+    text-indent: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    min-height: 100vh;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+100,000000+100&0+1,1+14,1+100 */
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 14%, rgba(0, 0, 0, 0.6) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+    /* IE6-9 */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -671,7 +677,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .oferta p {
-  font-family: hemi;
   color: white;
 }
 
@@ -679,77 +684,116 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   width: 100%;
 }
 
-.oferta .section {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: transparent;
-  padding:10px;
-  max-width: 1000px;
-  font-size: 1.5rem;
+.sections_wrapper {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 }
 
-.oferta .section--photo {
+.section {
+    text-align: justify;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.section--photo {
   width: 300px;
   height: 200px;
   overflow: hidden;
 }
 
-.oferta .section--text {
-  background-color: transparent;
-  max-width: 40%;
-}
-
-.oferta .section--text>p
-            {
-  -webkit-transform:translateY(50%);
-          transform:translateY(50%);
-  height:-webkit-fit-content;
-  height:-moz-fit-content;
-  height:fit-content;
-}
-
-.arsenal_wrapper{
-    position: relative;
-    
-    background-color:grey;
-    width:50%;
-    margin:0 auto;
-    top:50%;
-    -webkit-transform:translateY(-50%);
-            transform:translateY(-50%);
-
+.section--text {
+  width:300px;
 }
 
 .top{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient:horizontal;
-    -webkit-box-direction:normal;
-        -ms-flex-direction:row;
-            flex-direction:row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.bottom{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.bottom .section--photo {
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.bottom .section--text {
+  width: 400px;
+}
+
+.bottom .section{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.paragraf {
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.paragraf p{
+  padding-bottom:20px;
+}
+
+.arsenal_wrapper {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    margin: 0 auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    border: 1px solid white;
+    padding: 20px;
+    color: white;
 }
 
 .arsenal {
     height: 100vh;
-    background-color: rgba(0, 0, 255, 0.85);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.photo{
-}
+.photo {}
 
-.ui{
+.ui {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -761,31 +805,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         justify-content: space-around;
 }
 
-.indent_1{
-    -webkit-transform:translateX(80px);
-            transform:translateX(80px);
+.indent_1 {
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
 }
 
-.indent_2{
-    -webkit-transform:translateX(50px);
-            transform:translateX(50px);
+.indent_2 {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
 }
 
-.indent_3{
-    -webkit-transform:translateX(20px);
-            transform:translateX(20px);
+.indent_3 {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
 }
 
-.weaponInfo{
-    width:50%;
+.weaponInfo {
+    width: 80%;
     position: relative;
-    margin:0 auto;
-    padding:100px;
+    margin: 0 auto;
+    padding: 100px;
 }
 
 .gallery {
     height: 100vh;
-    background-color: rgba(255, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.85);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -801,7 +845,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .gallery .images {
   width: 50%;
   position: relative;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .gallery .images img {
@@ -809,6 +853,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 30vh;
     background-color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+.red {
+    color: rgb(189, 0, 0);
+}
+
+.orange{
+    color:rgb(255, 160, 82);
+    font-weight: bold;
 }

@@ -7,7 +7,7 @@ var Menu_Down = false;
     console.log(e.pageY);
     console.log(e.pageY - $(window).scrollTop());
         if (e.pageY - $(window).scrollTop() < 200) {
-            if (!Menu_Down) {
+            if (!Menu_Down && $(window).scrollTop()>200) {
                 console.log("Opuszczam Menu!");
                 Menu_Down = true;
                 $(".menu").slideDown("fast");
@@ -23,7 +23,13 @@ var Menu_Down = false;
 });
 
 (window).addEventListener("scroll", function (e) {
-    if($(window).scrollTop()>250 && !Menu_Down)
+    if($(window).scrollTop()<200 && !Menu_Down)
+    {
+        $(".menu").slideDown("slow");
+        Menu_Down=false;
+    }
+
+    if($(window).scrollTop()>200 && !Menu_Down)
     {
         $(".menu").slideUp("slow");
     }

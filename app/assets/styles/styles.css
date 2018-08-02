@@ -4,17 +4,17 @@
 @import "_fonts.css";
 @import "_animations.css";
 /* ============================================= G L O B A L S =========================================== */
-button:focus { outline: none; }
+
+button:focus {
+    outline: none;
+}
+
 p {
     margin: 0px;
 }
 
 wbr:after {
     content: "\00200B";
-}
-
-.hidden {
-    display: none;
 }
 
 .centererd {
@@ -42,13 +42,22 @@ wbr:after {
 }
 
 /* ============================================= S E K C J E =========================================== */
-.campfire{
+
+.campfire {
     position: fixed;
-    width:1200px;
-    height:1200px;
+    width: 1200px;
+    height: 1200px;
     z-index: -200;
-    left:-200px;
-    top:-200px;
+    left: -200px;
+    top: -200px;
+}
+#sub {
+    font-size: 4rem;
+}
+#sub_2 {
+    font-size: 2rem;
+    margin:0 auto;
+    font-family: hemi;
 }
 .landingPage {
     position: relative;
@@ -56,46 +65,45 @@ wbr:after {
     height: 100vh;
     overflow: hidden;
     .menu {
-        width:100%;
+        width: 100%;
         display: flex;
         position: fixed;
         background-color: rgba(0, 0, 0, 0.7);
-        background-image:url("assets/images/steel.jpg");
-        justify-content:flex-end;
-        border:none;
+        background-image: url("assets/images/steel.jpg");
+        justify-content: flex-start;
+        padding-left: 40px;
+        border: none;
         border-bottom: 1px solid white;
         z-index: 100;
         button {
             background-color: transparent;
             border: none;
             color: white;
-            padding:20px;
-            &:hover{
+            padding: 20px;
+            &:hover {
                 text-decoration: underline;
-                background-color:$mainRed;
+                background-color: $mainRed;
             }
-
         }
     }
     .ofertaBtn {
         position: absolute;
         padding: 20px 40px;
-        bottom: 120px;
+        bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 2rem;
         font-family: hemi;
         background-color: transparent;
-        color:white;
+        color: white;
         border: 2px solid white;
         -webkit-transition: color 300ms linear;
         -ms-transition: color 300ms linear;
         transition: color 300ms linear;
-        &:hover{
-            color:$mainRed;
-            border-color:$mainRed;
+        &:hover {
+            color: $mainRed;
+            border-color: $mainRed;
         }
-
     }
     .m4a1 {
         position: fixed;
@@ -103,9 +111,9 @@ wbr:after {
         min-width: 100vw;
         min-height: 100vh;
     }
-
     .logo {
         position: absolute;
+        width: 100%;
         top: 25vh;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -114,140 +122,174 @@ wbr:after {
         font-family: hemi;
         #main {
             font-size: 11rem;
-            .red {
-                color: $mainRed;
-            }
+
         }
-        #sub {
-            font-size: 3rem;
-        }
+
         #naucz {
             font-size: 2rem;
         }
     }
-    .opis{
-        font-family: hemi;
-        color:white;
-        width:500px;
-        text-align: justify;
+    .opis {
+
+        color: white;
+        width: 540px;
+font-weight: 100;
         text-indent: 2rem;
         line-height: 2rem;
         position: absolute;
-        right:10%;
-        bottom:120px;
+        right: 10%;
+        bottom: 120px;
         font-size: 1.5rem;
-        p{
-            padding-bottom:20px;
+        p {
+            padding-bottom: 20px;
         }
     }
 }
-.section_title{
+
+.section_title {
     font-family: hemi;
     color: white;
     text-align: center;
     font-size: 3rem;
     max-width: 50%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .oferta {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-indent: 2rem;
+    display: flex;
     position: relative;
     min-height: 100vh;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+100,000000+100&0+1,1+14,1+100 */
-background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 14%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-    display: flex;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 14%, rgba(0, 0, 0, 0.6) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 14%, rgba(0, 0, 0, 0.6) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 14%, rgba(0, 0, 0, 0.6) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+    /* IE6-9 */
     flex-direction: column;
     justify-content: space-evenly;
     padding-top: 200px;
     p {
-        font-family: hemi;
         color: white;
-
     }
     img {
         width: 100%;
     }
-    .section {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: transparent;
-        padding:10px;
-        max-width: 1000px;
-        font-size: 1.5rem;
-        &--photo {
-            width: 300px;
-            height: 200px;
-            overflow: hidden;
-        }
-        &--text {
-            background-color: transparent;
-            max-width: 40%;
-            &>p
-            {
-                    transform:translateY(50%);
-                    height:fit-content;
-            }
-        }
-    }
 }
-.arsenal_wrapper{
-    position: relative;
-    
-    background-color:grey;
-    width:50%;
-    margin:0 auto;
-    top:50%;
-    transform:translateY(-50%);
 
+.sections_wrapper {
+display: flex;
+flex-direction: column;
+}
+.section {
+    text-align: justify;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 10px;
+
+    &--photo {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+    }
+    &--text {
+        width:300px;
+    }
 }
 .top{
     display: flex;
-    flex-direction:row;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
 }
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .section--photo {
+        width: 400px;
+        height: 350px;
+        overflow: hidden;
+    }
+    .section--text {
+        width: 400px;
+    }
+    .section{
+        flex-direction: column;
+    }
+}
+
+.paragraf {
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2rem;
+
+    p{
+        padding-bottom:20px;
+    }
+}
+
+.arsenal_wrapper {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid white;
+    padding: 20px;
+    color: white;
+}
+
 .arsenal {
     height: 100vh;
-    background-color: rgba(0, 0, 255, 0.85);
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.photo{
-}
-.ui{
+
+.photo {}
+
+.ui {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.indent_1{
-    transform:translateX(80px);
+
+.indent_1 {
+    transform: translateX(80px);
 }
-.indent_2{
-    transform:translateX(50px);
+
+.indent_2 {
+    transform: translateX(50px);
 }
-.indent_3{
-    transform:translateX(20px);
+
+.indent_3 {
+    transform: translateX(20px);
 }
-.weaponInfo{
-    width:50%;
+
+.weaponInfo {
+    width: 80%;
     position: relative;
-    margin:0 auto;
-    padding:100px;
+    margin: 0 auto;
+    padding: 100px;
 }
 
 .gallery {
     height: 100vh;
-    background-color: rgba(255, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.85);
     display: flex;
     flex-direction: column;
     justify-content: center;
     .images {
         width: 50%;
         position: relative;
-        margin:0 auto;
+        margin: 0 auto;
         img {
             width: 100%;
         }
@@ -255,6 +297,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .contact {
+    display: flex;
     height: 30vh;
     background-color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+.red {
+    color: $mainRed;
+}
+
+.orange{
+    color:rgb(255, 160, 82);
+    font-weight: bold;
 }
