@@ -488,6 +488,11 @@ button:focus {
     outline: none;
 }
 
+a{
+    color:white;
+    text-decoration: none;
+}
+
 p {
     margin: 0px;
 }
@@ -535,12 +540,13 @@ wbr:after {
 
 #sub {
     font-size: 4rem;
+    text-align: center;
 }
 
 #sub_2 {
     font-size: 2rem;
-    margin:0 auto;
     font-family: hemi;
+    text-align: center;
 }
 
 .landingPage {
@@ -551,6 +557,7 @@ wbr:after {
 }
 
 .landingPage .menu {
+  font-size: 0.8rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,7 +593,7 @@ wbr:after {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  font-size: 2rem;
+  font-size: 1.1rem;
   font-family: hemi;
   background-color: transparent;
   color: white;
@@ -629,18 +636,18 @@ wbr:after {
 
 .landingPage .opis {
   color: white;
-  width: 610px;
-  f   ont-weight: 100;
+  width: 450px;
+  font-weight: 100;
   text-indent: 2rem;
-  line-height: 2rem;
+  line-height: 1.3rem;
   position: absolute;
-  right: 10%;
-  bottom: 105px;
-  font-size: 1.5rem;
+  right: 100px;
+  bottom: 95px;
+  font-size: 1.0rem;
 }
 
 .landingPage .opis p {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .section_title {
@@ -648,12 +655,10 @@ wbr:after {
     color: white;
     text-align: center;
     font-size: 3rem;
-    max-width: 50%;
-    margin: 0 auto;
 }
 
 .oferta {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 
     display: -webkit-box;
 
@@ -712,9 +717,10 @@ display: flex;
 }
 
 .section--photo {
-  width: 320px;
-  height: 200px;
+  width: 280px;
+  height: 160px;
   overflow: hidden;
+  margin:0 auto;
 }
 
 .section--text {
@@ -748,10 +754,14 @@ display: flex;
 }
 
 .bottom .section--photo {
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 160px;
   overflow: hidden;
   margin:0 auto;
+}
+
+.bottom .section--photo img{
+  width:100%;
 }
 
 .bottom .section--text {
@@ -767,14 +777,14 @@ display: flex;
 
 .paragraf {
     color: white;
-    width: 60%;
+    width: 1000px;
     margin: 0 auto;
     text-align: center;
     line-height: 2rem;
 }
 
 .paragraf p{
-  padding-bottom:20px;
+  padding-bottom:5px;
 }
 
 .arsenal_wrapper {
@@ -875,7 +885,7 @@ display: flex;
 
 .cennik{
     background-color: rgba(0, 0, 0, 0.6);
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     color:white;
 }
 
@@ -896,11 +906,42 @@ display: flex;
 }
 
 .contact {
+    padding-top: 120px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 30vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+100,000000+100&0+1,1+14,1+100 */
+ /* FF3.6-15 */
+ /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 14%, rgba(0, 0, 0, 0) 100%);
+ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+ /* IE6-9 */
+    color:white;
+    font-size: 1.2rem;
+}
+
+.contact p{
+  margin:0 auto;
+  padding:20px;
+}
+
+.footer{
+    width:100%;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.596);
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.footer a{
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .hidden {
