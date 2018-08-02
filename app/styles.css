@@ -579,7 +579,7 @@ wbr:after {
   background-color: rgb(189, 0, 0);
 }
 
-.landingPage .ofertaBtn {
+.landingPage .ofertaBtn, .landingPage .arsenal_btn {
   position: absolute;
   padding: 20px 40px;
   bottom: 30px;
@@ -594,7 +594,7 @@ wbr:after {
   transition: color 300ms linear;
 }
 
-.landingPage .ofertaBtn:hover {
+.landingPage .ofertaBtn:hover, .landingPage .arsenal_btn:hover {
   color: rgb(189, 0, 0);
   border-color: rgb(189, 0, 0);
 }
@@ -618,8 +618,9 @@ wbr:after {
   font-family: hemi;
 }
 
-.landingPage .logo #main {
-  font-size: 11rem;
+.landingPage .logo img {
+  width:800px;
+  padding-bottom:35px;
 }
 
 .landingPage .logo #naucz {
@@ -628,13 +629,13 @@ wbr:after {
 
 .landingPage .opis {
   color: white;
-  width: 540px;
-  font-weight: 100;
+  width: 610px;
+  f   ont-weight: 100;
   text-indent: 2rem;
   line-height: 2rem;
   position: absolute;
   right: 10%;
-  bottom: 120px;
+  bottom: 105px;
   font-size: 1.5rem;
 }
 
@@ -653,9 +654,11 @@ wbr:after {
 
 .oferta {
     font-size: 1.2rem;
-    text-indent: 2rem;
+
     display: -webkit-box;
+
     display: -ms-flexbox;
+
     display: flex;
     position: relative;
     min-height: 100vh;
@@ -695,7 +698,7 @@ display: flex;
 }
 
 .section {
-    text-align: justify;
+    text-align: center;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -709,13 +712,13 @@ display: flex;
 }
 
 .section--photo {
-  width: 300px;
+  width: 320px;
   height: 200px;
   overflow: hidden;
 }
 
 .section--text {
-  width:300px;
+  width:320px;
 }
 
 .top{
@@ -745,9 +748,10 @@ display: flex;
 }
 
 .bottom .section--photo {
-  width: 400px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
+  margin:0 auto;
 }
 
 .bottom .section--text {
@@ -775,61 +779,78 @@ display: flex;
 
 .arsenal_wrapper {
     position: relative;
-    background-color: rgb(0, 0, 0);
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    border: 1px solid white;
     padding: 20px;
     color: white;
 }
 
+.arsenal_wrapper .top .photo{
+  width:60%;
+}
+
+.arsenal_wrapper .top .photo img{
+  width:100%;
+}
+
+.arsenal_wrapper .ui {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.arsenal_wrapper .ui button{
+  padding: 10px 20px;
+  bottom: 30px;
+  font-size: 2rem;
+  font-family: hemi;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transition: color 300ms linear;
+}
+
+.arsenal_wrapper .ui button:hover {
+  color: rgb(189, 0, 0);
+  border-color: rgb(189, 0, 0);
+}
+
+.arsenal_wrapper .indent_1 {
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
+}
+
+.arsenal_wrapper .indent_2 {
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+}
+
+.arsenal_wrapper .indent_3 {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.arsenal_wrapper .weaponInfo {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  padding: 40px;
+}
+
 .arsenal {
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.photo {}
-
-.ui {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-}
-
-.indent_1 {
-    -webkit-transform: translateX(80px);
-            transform: translateX(80px);
-}
-
-.indent_2 {
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-}
-
-.indent_3 {
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
-}
-
-.weaponInfo {
-    width: 80%;
-    position: relative;
-    margin: 0 auto;
-    padding: 100px;
+    padding-top: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .gallery {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.6);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -852,12 +873,34 @@ display: flex;
   width: 100%;
 }
 
+.cennik{
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1.2rem;
+    color:white;
+}
+
+.cennik table{
+  margin:0 auto;
+  width:50%;
+}
+
+.cennik table, .cennik td, .cennik th, .cennik td{
+  border:1px solid white;
+  padding:20px;
+}
+
+.cennik p{
+  width:50%;
+  margin:0 auto;
+  padding:30px;
+}
+
 .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 30vh;
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hidden {

@@ -86,7 +86,7 @@ wbr:after {
             }
         }
     }
-    .ofertaBtn {
+    .ofertaBtn, .arsenal_btn {
         position: absolute;
         padding: 20px 40px;
         bottom: 30px;
@@ -120,9 +120,9 @@ wbr:after {
         text-align: center;
         color: rgb(219, 219, 219);
         font-family: hemi;
-        #main {
-            font-size: 11rem;
-
+        img {
+            width:800px;
+            padding-bottom:35px;
         }
 
         #naucz {
@@ -130,15 +130,14 @@ wbr:after {
         }
     }
     .opis {
-
         color: white;
-        width: 540px;
-font-weight: 100;
+        width: 610px;
+f   ont-weight: 100;
         text-indent: 2rem;
         line-height: 2rem;
         position: absolute;
         right: 10%;
-        bottom: 120px;
+        bottom: 105px;
         font-size: 1.5rem;
         p {
             padding-bottom: 20px;
@@ -157,7 +156,7 @@ font-weight: 100;
 
 .oferta {
     font-size: 1.2rem;
-    text-indent: 2rem;
+
     display: flex;
     position: relative;
     min-height: 100vh;
@@ -186,7 +185,7 @@ display: flex;
 flex-direction: column;
 }
 .section {
-    text-align: justify;
+    text-align: center;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -194,12 +193,12 @@ flex-direction: column;
     padding: 10px;
 
     &--photo {
-        width: 300px;
+        width: 320px;
         height: 200px;
         overflow: hidden;
     }
     &--text {
-        width:300px;
+        width:320px;
     }
 }
 .top{
@@ -212,9 +211,10 @@ flex-direction: column;
     flex-direction: row;
     justify-content: center;
     .section--photo {
-        width: 400px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
         overflow: hidden;
+        margin:0 auto;
     }
     .section--text {
         width: 400px;
@@ -238,51 +238,69 @@ flex-direction: column;
 
 .arsenal_wrapper {
     position: relative;
-    background-color: rgb(0, 0, 0);
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 1px solid white;
     padding: 20px;
     color: white;
+    .top{
+        .photo{
+            width:60%;
+            img{
+                width:100%;
+            }
+        }
+    }
+    .ui {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        button{
+            padding: 10px 20px;
+            bottom: 30px;
+            font-size: 2rem;
+            font-family: hemi;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            -webkit-transition: color 300ms linear;
+            -ms-transition: color 300ms linear;
+            transition: color 300ms linear;
+            &:hover {
+                color: $mainRed;
+                border-color: $mainRed;
+            }
+        }
+    }
+    .indent_1 {
+        transform: translateX(80px);
+    }
+    
+    .indent_2 {
+        transform: translateX(60px);
+    }
+    
+    .indent_3 {
+        transform: translateX(20px);
+    }
+    
+    .weaponInfo {
+        width: 60%;
+        position: relative;
+        margin: 0 auto;
+        padding: 40px;
+    }
 }
 
 .arsenal {
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.photo {}
 
-.ui {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.indent_1 {
-    transform: translateX(80px);
-}
-
-.indent_2 {
-    transform: translateX(50px);
-}
-
-.indent_3 {
-    transform: translateX(20px);
-}
-
-.weaponInfo {
-    width: 80%;
-    position: relative;
-    margin: 0 auto;
-    padding: 100px;
-}
 
 .gallery {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,11 +313,31 @@ flex-direction: column;
         }
     }
 }
+.cennik{
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1.2rem;
+    color:white;
+    table{
+        margin:0 auto;
+        width:50%;
+    }
+
+    table, td, th, td{
+        border:1px solid white;
+        padding:20px;
+    }
+
+    p{
+        width:50%;
+        margin:0 auto;
+        padding:30px;
+    }
+}
 
 .contact {
     display: flex;
     height: 30vh;
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hidden {
