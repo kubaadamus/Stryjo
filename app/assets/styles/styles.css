@@ -290,33 +290,109 @@ flex-direction: column;
         transform: translateX(20px);
     }
     
-    .weaponInfo {
-        width: 60%;
-        position: relative;
-        margin: 0 auto;
-        padding: 40px;
-    }
-}
 
+}
+.weaponInfo {
+    width: 500px;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px;
+    color: white;
+    text-align: justify;
+}
 .arsenal {
     padding-top: 120px;
     background-color: rgba(0, 0, 0, 0.6);
 }
-
-
-
 .gallery {
-    height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .images {
-        width: 50%;
+    padding-top:120px;
+    .main_image {
+        max-height: 70vh;
+        width:100%;
         position: relative;
         margin: 0 auto;
+        overflow: hidden;
+        padding-top:50px;
         img {
             width: 100%;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;  
+        }
+        .prev{
+        position: absolute;
+        opacity: 0;
+        height:100%;
+        width:40%;
+        background-color: rgba(255, 255, 255, 0.144);
+        top:0px;
+        transition: visibility 0s, opacity 0.5s linear;
+        }
+        .next{
+            transition: visibility 0s, opacity 0.5s linear;
+            position: absolute;
+            height:100%;
+            width:40%;
+            background-color: rgba(255, 255, 255, 0.144);
+            top:0px;
+            right:0px;
+            opacity: 0;
+        }
+        .prev, .next{
+            img{
+                position: absolute;
+                top:50%;
+                transform:translateY(-50%);
+                height:100px;
+                opacity:0.7;
+                pointer-events: none;
+            }
+            &:hover{
+                    opacity: 1;
+
+            }
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+              -moz-user-select: none; /* Firefox */
+               -ms-user-select: none; /* Internet Explorer/Edge */
+                   user-select: none; /* Non-prefixed version, currently
+                                         supported by Chrome and Opera */
+                                         -webkit-user-drag: none;
+                                         -khtml-user-drag: none;
+                                         -moz-user-drag: none;
+                                         -o-user-drag: none;
+                                         user-drag: none;                            
+        }
+    }
+    .images{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        width:100%;
+        margin: 0 auto;
+    }
+    .thumb{
+        width:50px;
+        height:50px;
+        margin:10px;
+        img{
+            width:100%;
+            overflow: hidden;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;  
+            
+        }
+        &:hover{
+            transform:scale(1.2);
         }
     }
 }
@@ -386,3 +462,13 @@ flex-direction: column;
     color:rgb(255, 160, 82);
     font-weight: bold;
 }
+
+.noselect {
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
