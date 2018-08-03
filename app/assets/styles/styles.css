@@ -91,10 +91,10 @@ wbr:after {
             }
         }
     }
-    .ofertaBtn, .arsenal_btn {
+    .ofertaBtn {
         position: absolute;
         padding: 20px 40px;
-        bottom: 30px;
+        bottom: 250px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 1.1rem;
@@ -142,7 +142,7 @@ wbr:after {
         line-height: 1.3rem;
         position: absolute;
         right: 100px;
-        bottom: 95px;
+        bottom: 45px;
         font-size: 1.0rem;
         p {
             padding-bottom: 10px;
@@ -309,14 +309,14 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top:120px;
+    padding-top:20px;
     .main_image {
-        max-height: 70vh;
+        max-height: 87vh;
         width:100%;
         position: relative;
         margin: 0 auto;
         overflow: hidden;
-        padding-top:50px;
+        margin-top:50px;
         img {
             width: 100%;
             -webkit-user-drag: none;
@@ -378,11 +378,13 @@ flex-direction: column;
         margin: 0 auto;
     }
     .thumb{
-        width:50px;
+        width:80px;
         height:50px;
         margin:10px;
+        border: 2px solid white;
+        overflow: hidden;
         img{
-            width:100%;
+            height:100%;
             overflow: hidden;
             -webkit-user-drag: none;
             -khtml-user-drag: none;
@@ -418,10 +420,9 @@ flex-direction: column;
 }
 
 .contact {
-    padding-top: 120px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    height: 30vh;
     text-align: center;
  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+100,000000+100&0+1,1+14,1+100 */
  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 14%, rgba(0, 0, 0, 0) 100%);
@@ -440,6 +441,8 @@ flex-direction: column;
     }
 }
 .footer{
+    position: relative;
+    display: block;
     width:100%;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.596);
