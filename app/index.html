@@ -37,7 +37,9 @@
 			<p id="sub">SZKOLENIA STRZELECKIE</p>
 			<p id="sub_2">statyczne, dynamiczne, w grupach i indywidualne</p>
 		</div>
-		<a href="#oferta"><button class="ofertaBtn glass">POZNAJ OFERTĘ</button></a>
+		<a href="#oferta">
+			<button class="ofertaBtn glass">POZNAJ OFERTĘ</button>
+		</a>
 		<div class="opis">
 			<p>
 				<span class="orange">Naucz się bezpiecznie strzelać</span> z nowoczesnej broni małokalibrowej pod okiem doświadczonego instruktora.</p>
@@ -46,7 +48,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="oferta" >
+	<div class="oferta">
 		<div class="section_title">
 			<p id="oferta">OFERTA</p>
 		</div>
@@ -179,113 +181,97 @@
 
 		</div>
 	</div>
-	<div class="cennik hidden">
+	<div class="cennik">
 		<div class="section_title">
 			<p>CENNIK</p>
 		</div>
-		<table>
-			<tr>
-				<th>Opcja</th>
-				<th>Cena</th>
-				<th>Opis</th>
-			</tr>
-			<tr>
-				<td>podstawa</td>
-				<td>20 zł</td>
-				<td>
-					<ul>
-						<li>
-							costam
-						</li>
-						<li>
-							costam
-						</li>
-						<li>
-							costam
-						</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>Dodatek 1</td>
-				<td>20 zł</td>
-				<td>
-					<ul>
-						<li>
-							costam
-						</li>
-						<li>
-							costam
-						</li>
-						<li>
-							costam
-						</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>Dodatek 2</td>
-				<td>20 zł</td>
-				<td>
-					<ul>
-						<li>
-							costam
-						</li>
-						<li>
-							costam
-						</li>
-						<li>
-							costam
-						</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>Dodatek 3</td>
-				<td>20 zł</td>
-				<td>
-					<ul>
-						<li>
-							costam
-						</li>
-						<li>
-							costam
-						</li>
-						<li>
-							costam
-						</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>Dodatek 4</td>
-				<td>20 zł</td>
-				<td>
-					<ul>
-						<li>
-							costam
-						</li>
-						<li>
-							costam
-						</li>
-						<li>
-							costam
-						</li>
-					</ul>
-				</td>
-			</tr>
-		</table>
 		<p>
 			* Mile widziane rodziny (rabat 10%).
 		</p>
+		<br>
+		<div class="inputy">
+
+			<div class="row">
+				<div class="nazwa">
+					<label>
+						Dorośli</label>
+				</div>
+				<input id="_dor" type="range" id="cowbell" name="cowbell" min="1" max="10" value="1" step="1" />
+				<input id="_dorbox" type="text" name="ak" value="1">
+
+			</div>
+			<div class="row">
+				<div class="nazwa">
+					<label>
+						Dzieci</label>
+				</div>
+				<input id="_dz" type="range" id="cowbell" name="cowbell" min="0" max="10" value="0" step="1" />
+				<input id="_dzbox" type="text" name="ak" value="0">
+			</div>
+			<div class="row">
+				<div class="nazwa">
+					<label>
+						<input type="checkbox"> AK-47</label>
+				</div>
+				<input id="_1" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+				<input id="_1box" type="text" name="ak" value="0">
+			</div>
+			<div class="row">
+				<div class="nazwa">
+					<label>
+						<input type="checkbox"> RPG</label>
+				</div>
+				<input id="_2" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+				<input id="_2box" type="text" name="ak" value="0">
+			</div>
+			<div class="row">
+				<div class="nazwa">
+					<label>
+						<input type="checkbox"> Vodka</label>
+				</div>
+				<input id="_3" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+				<input id="_3box" type="text" name="ak" value="0">
+			</div>
+			<div class="row">
+				<div class="nazwa">
+					<label>
+						<input type="checkbox"> Digitarjew</label>
+				</div>
+				<input id="_4" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+				<input id="_4box" type="text" name="ak" value="0">
+			</div>
+			<div class="row">
+				<div class="nazwa">
+					<label>
+						<input type="checkbox"> KVAS</label>
+				</div>
+				<input id="_5" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+				<input id="_5box" type="text" name="ak" value="0">
+			</div>
+			<div class="row">
+				<div class="nazwa">
+					<label>
+						<input type="checkbox"> M1A1</label>
+				</div>
+				<input id="_6" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+				<input id="_6box" type="text" name="ak" value="0">
+			</div>
+		</div>
+
+		<div class="orange" id="rabatAlert">NALICZONO RABAT -10%!</div>
+		<br>
+		<label class="orange" >SUMA:</label>
+		<br>
+		<input id="suma" type="text" name="ak" value="100 PLN" style="width: 120px;">
 	</div>
 	<div class="contact" id="kontakt">
 		<div class="section_title">
 			<p>KONTAKT</p>
 		</div>
 		<div class="opis">
-				<p><span class="orange">Zadzwoń lub wyślij e-maila</span> i zarezerwuj szkolenie już dziś!</p>
-			</div>
+			<p>
+				<span class="orange">Zadzwoń lub wyślij e-maila</span> i zarezerwuj szkolenie już dziś!</p>
+		</div>
 		<p>sierż. Maciej Adamus</p>
 		<p>tel: 608 585 632</p>
 		<p>e-mail: mejl-firmowy</p>
@@ -301,5 +287,6 @@
 <script src="assets/scripts/menu.js"></script>
 <script src="assets/scripts/scroll.js"></script>
 <script src="assets/scripts/gallery.js"></script>
+<script src="assets/scripts/cennik.js"></script>
 
 </html>

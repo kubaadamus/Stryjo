@@ -3,6 +3,7 @@
 @import "_mixins.css";
 @import "_fonts.css";
 @import "_animations.css";
+@import "_inputs.css";
 /* ============================================= G L O B A L S =========================================== */
 
 button:focus {
@@ -310,6 +311,7 @@ flex-direction: column;
     flex-direction: column;
     justify-content: center;
     padding-top:20px;
+    
     .main_image {
         max-height: 87vh;
         width:100%;
@@ -402,21 +404,31 @@ flex-direction: column;
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 1.0rem;
     color:white;
-    table{
-        margin:0 auto;
-        width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .inputy{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
     }
-
-    table, td, th, td{
-        border:1px solid white;
-        padding:20px;
+    .row{
+        position: relative;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
     }
-
-    p{
-        width:50%;
-        margin:0 auto;
-        padding:30px;
-    }
+.nazwa{
+    width:100px;
+    display: flex;
+}
+#rabatAlert{
+    display: none;
+}
+.suma{
+    width:auto;
+}
 }
 
 .contact {

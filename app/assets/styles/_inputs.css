@@ -1,0 +1,41 @@
+input{
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:20px;
+    position: relative;
+    transform:translateY(-25%);
+
+}
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+}
+input[type=checkbox] {
+
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: rgb(255, 25, 25);
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    background: rgb(255, 255, 255);
+    margin-top: -4px;
+}
+input[type=text]{
+    width:60px;
+    height:1rem;
+    margin:0px;
+    padding: 0px;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
