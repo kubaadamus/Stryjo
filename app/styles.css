@@ -554,6 +554,12 @@ input[type=text]{
 
 /* ============================================= G L O B A L S =========================================== */
 
+body {
+    min-width: 250px;
+    background-color: black;
+    position: relative;
+}
+
 button:focus {
     outline: none;
 }
@@ -561,6 +567,9 @@ button:focus {
 a {
     color: white;
     text-decoration: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 p {
@@ -580,20 +589,22 @@ wbr:after {
 }
 
 .loading {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
     position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
     top: 0;
-    left: 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 .loading .bar {
-  background-image: url('assets/images/loading.png');
-  background-size: cover;
+  position: relative;
   height: 50px;
   width: 50px;
+  top: 50%;
+  margin: 0 auto;
+  background-image: url('assets/images/loading.png');
+  background-size: cover;
   z-index: 5;
 }
 
@@ -609,14 +620,42 @@ wbr:after {
 }
 
 #sub {
-    font-size: 4rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
-#sub_2 {
+@media (min-width: 400px) {
+
+  #sub {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  #sub {
+    font-size: 4rem;
+  }
+}
+
+#sub_2 {
+    font-size: 1rem;
     font-family: hemi;
     text-align: center;
+}
+
+@media (min-width: 400px) {
+
+  #sub_2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  #sub_2 {
+    font-size: 1.6rem;
+  }
 }
 
 .landingPage {
@@ -627,30 +666,22 @@ wbr:after {
 }
 
 .landingPage .menu {
-  font-size: 0.8rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-image: url("assets/images/steel.jpg");
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-left: 40px;
   border: none;
+  background-image: url("assets/images/steel.jpg");
   border-bottom: 1px solid white;
   z-index: 100;
+  font-size: 0.8rem;
+  width: 100%;
 }
 
 .landingPage .menu button {
+  display: block;
+  position: relative;
+  margin: 0 auto;
   background-color: transparent;
   border: none;
   color: white;
   padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .landingPage .menu button:hover {
@@ -658,10 +689,27 @@ wbr:after {
   background-color: rgb(189, 0, 0);
 }
 
+@media (min-width: 400px) {
+
+  .landingPage .menu button {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .landingPage .menu button {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .landingPage .ofertaBtn {
   position: absolute;
   padding: 20px 40px;
-  bottom: 250px;
+  bottom: 280px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -671,6 +719,13 @@ wbr:after {
   color: white;
   border: 2px solid white;
   transition: color 300ms linear;
+}
+
+@media (min-width: 400px) {
+
+  .landingPage .ofertaBtn {
+    bottom: 250px;
+  }
 }
 
 .landingPage .ofertaBtn:hover {
@@ -698,8 +753,15 @@ wbr:after {
 }
 
 .landingPage .logo img {
-  width: 800px;
+  width: 80%;
   padding-bottom: 35px;
+}
+
+@media (min-width: 1000px) {
+
+  .landingPage .logo img {
+    max-width: 800px;
+  }
 }
 
 .landingPage .logo #naucz {
@@ -708,14 +770,30 @@ wbr:after {
 
 .landingPage .opis {
   color: white;
-  width: 450px;
+  font-size: 1.0rem;
   font-weight: 100;
   text-indent: 2rem;
   line-height: 1.3rem;
   position: absolute;
-  right: 100px;
+  text-align: center;
   bottom: 45px;
-  font-size: 1.0rem;
+  width: 70%;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (min-width: 1000px) {
+
+  .landingPage .opis {
+    left: auto;
+    width: 450px;
+    right: 100px;
+    bottom: 45px;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .landingPage .opis p {
@@ -726,7 +804,14 @@ wbr:after {
     font-family: hemi;
     color: white;
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 1000px) {
+
+  .section_title {
+    font-size: 3.3rem;
+  }
 }
 
 .oferta {
@@ -750,7 +835,6 @@ wbr:after {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding-top: 200px;
 }
 
 .oferta p {
@@ -759,6 +843,13 @@ wbr:after {
 
 .oferta img {
   width: 100%;
+}
+
+@media (min-width: 1000px) {
+
+  .oferta {
+    padding-top: 200px;
+  }
 }
 
 .sections_wrapper {
@@ -786,27 +877,58 @@ wbr:after {
 }
 
 .section--photo {
-  width: 280px;
-  height: 160px;
+  width: 140px;
+  height: 80px;
   overflow: hidden;
   margin: 0 auto;
 }
 
+@media (min-width: 180px) {
+
+  .section--photo {
+    width: 200px;
+    height: 110px;
+  }
+}
+
+.section--photomixin pc {
+  width: 280px;
+  height: 160px;
+}
+
 .section--text {
-  width: 320px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+
+  .section--text {
+    max-width: 320px;
+  }
 }
 
 .top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+@media (min-width: 1000px) {
+
+  .top {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
 }
 
 .bottom {
@@ -823,18 +945,37 @@ wbr:after {
 }
 
 .bottom .section--photo {
-  width: 280px;
-  height: 160px;
+  width: 140px;
+  height: 80px;
   overflow: hidden;
   margin: 0 auto;
+}
+
+@media (min-width: 180px) {
+
+  .bottom .section--photo {
+    width: 200px;
+    height: 110px;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .bottom .section--photo {
+    width: 280px;
+    height: 160px;
+  }
 }
 
 .bottom .section--photo img {
   width: 100%;
 }
 
-.bottom .section--text {
-  width: 400px;
+@media (min-width: 1000px) {
+
+  .bottom .section--text {
+    width: 400px;
+  }
 }
 
 .bottom .section {
@@ -846,10 +987,12 @@ wbr:after {
 
 .paragraf {
     color: white;
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     line-height: 1.3rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .paragraf p {
@@ -944,7 +1087,7 @@ wbr:after {
 }
 
 .gallery .main_image {
-  max-height: 75vh;
+  max-height: 75%;
   width: 70%;
   position: relative;
   margin: 0 auto;
@@ -1075,21 +1218,39 @@ wbr:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 400px;
+}
+
+@media (min-width: 400px) {
+
+  .cennik .inputy {
+    width: 400px;
+  }
 }
 
 .cennik .row {
   position: relative;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 1000px) {
+
+  .cennik .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 0px;
+  }
 }
 
 .cennik .nazwa {
@@ -1103,9 +1264,25 @@ wbr:after {
   display: none;
 }
 
-.dotted{
+.dotted {
     border: 2px dotted rgba(255, 255, 255, 0.15);
-    padding:20px;
+    padding: 20px;
+}
+
+@media (min-width: 1000px) {
+
+  .special-transform50 {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .special-transform95 {
+    -webkit-transform: translateX(-95px);
+            transform: translateX(-95px);
+  }
 }
 
 .contact {
