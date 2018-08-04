@@ -6,10 +6,33 @@ input{
     position: relative;
     transform:translateY(-25%);
 
+    
+
 }
 input[type=range] {
     /*removes default webkit styles*/
     -webkit-appearance: none;
+    -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently
+                                         supported by Chrome and Opera */
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+            outline: none;
+            
+}
+input[type=range]:active{
+outline: none;
 }
 input[type=checkbox] {
 
@@ -18,7 +41,7 @@ input[type=checkbox] {
 input[type=range]::-webkit-slider-runnable-track {
     width: 300px;
     height: 5px;
-    background: rgb(255, 25, 25);
+    background: rgba(255, 255, 255, 0.658);
     border: none;
     border-radius: 3px;
 }

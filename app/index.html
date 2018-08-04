@@ -22,9 +22,7 @@
 			<a href="#oferta">
 				<button>OFERTA</button>
 			</a>
-			<a href="#arsenal">
-				<button>ARSENAŁ</button>
-			</a>
+
 			<a href="#galeria">
 				<button>GALERIA</button>
 			</a>
@@ -73,8 +71,6 @@
 					ekipy.
 				</p>
 		</div>
-		<br>
-		<br>
 		<p id="sub_2">PRZEBIEG SZKOLENIA</p>
 		<div class="sections_wrapper">
 			<div class="top">
@@ -95,7 +91,7 @@
 					</div>
 					<div class="section section--text">
 						<p>Po wstępie teoretycznym sprawdzisz swoje siły na profesjonalnej strzelnicy.
-							<span class="orange"> Sam wybierzesz pistolet</span> / karabin, którego chcesz używać.</p>
+							<span class="orange"> Sam wybierzesz</span> pistolet / karabin, którego chcesz używać.</p>
 					</div>
 				</div>
 				<div class="section">
@@ -103,13 +99,11 @@
 						<img src="assets/images/campfire.jpeg" alt="" class="">
 					</div>
 					<div class="section section--text">
-						<p>Usatysfakcjonowany dniem pełnym wrażeń, zrelaksujesz się przy grillu / ognisku
-							<span class="orange">dzieląc się wrażeniami</span> z ekipą.</p>
+						<p>Usatysfakcjonowany dniem pełnym wrażeń,
+							<span class="orange">zrelaksujesz się przy grillu</span> / ognisku dzieląc się wrażeniami z ekipą.</p>
 					</div>
 				</div>
 			</div>
-			<br>
-			<br>
 			<p id="sub_2">INSTRUKTOR</p>
 			<div class="bottom">
 
@@ -118,7 +112,7 @@
 						<img src="assets/images/stryjo.jpg" alt="" class="">
 					</div>
 					<div class="section section--text">
-						<p>Nasz instruktor - sierżant Maciej Adamus jest wysokiej klasy specjalistą od obsługi broni różnego kalibru, szkolenia
+						<p>Nasz instruktor - chorąży Maciej Adamus jest wysokiej klasy specjalistą od obsługi broni różnego kalibru, szkolenia
 							młodych żołnierzy oraz medycyny pola walki. Wieloletnie doświadczenie na stanowisku trenera strzelców w 42. bazie
 							lotnictwa szkolnego jest
 							<span class="orange">gwarancją udanej i bezpiecznej zabawy.</span>
@@ -153,6 +147,8 @@
 		</div>
 	</div>
 	<div class="gallery" id="galeria">
+		<br>
+		<br>
 		<div class="section_title">
 			<p>GALERIA</p>
 		</div>
@@ -160,7 +156,7 @@
 			<div class="prev">
 				<img src="assets/images/left.svg" alt="">
 			</div>
-			<img src="assets/images/family.JPG" alt="" id="obraz">
+			<img src="assets/images/family2.JPG" alt="" id="obraz">
 			<div class="next">
 				<img src="assets/images/right.svg" alt="">
 			</div>
@@ -181,90 +177,133 @@
 
 		</div>
 	</div>
+
 	<div class="cennik">
+		<br>
+		<br>
+		<br>
 		<div class="section_title">
-			<p>CENNIK</p>
+			<p>SPRAWDŹ KOSZT SZKOLENIA</p>
 		</div>
 		<p>
 			* Mile widziane rodziny (rabat 10%).
 		</p>
 		<br>
-		<div class="inputy">
+		<div class="dotted">
+			<div class="inputy">
+				<p>SKŁAD OSOBOWY:</p>
+				<br>
+				<div class="row">
+					<div class="nazwa">
+						<label>
+							Dorośli</label>
+					</div>
+					<input style="transform: translateX(-50px);" id="_dor" type="range" id="cowbell" name="cowbell" min="1" max="10" value="1"
+					    step="1" />
+					<input style="transform: translateX(-95px);" id="_dorbox" type="text" name="ak" value="1">
 
-			<div class="row">
-				<div class="nazwa">
-					<label>
-						Dorośli</label>
 				</div>
-				<input id="_dor" type="range" id="cowbell" name="cowbell" min="1" max="10" value="1" step="1" />
-				<input id="_dorbox" type="text" name="ak" value="1">
+				<div class="row">
+					<div class="nazwa">
+						<label>
+							Dzieci</label>
+					</div>
+					<input style="transform: translateX(-50px);" id="_dz" type="range" id="cowbell" name="cowbell" min="0" max="10" value="0"
+					    step="1" />
+					<input style="transform: translateX(-95px);" id="_dzbox" type="text" name="ak" value="0">
+				</div>
+				<br>
+				<p>BROŃ I AMUNICJA:</p>
+				<br>
+				<div class="row">
+					<div class="nazwa">
+						<label>
+							AK-47</label>
+					</div>
+					<input class="lel" id="_1" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+					<input id="_1box" type="text" name="ak" value="0">
+					<div class="nazwa">
+						<label>
+							x5 PLN</label>
+					</div>
+				</div>
 
-			</div>
-			<div class="row">
-				<div class="nazwa">
-					<label>
-						Dzieci</label>
+				<div class="row">
+					<div class="nazwa">
+						<label>
+							RPG</label>
+					</div>
+					<input id="_2" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+					<input id="_2box" type="text" name="ak" value="0">
+					<div class="nazwa">
+						<label>
+							x15 PLN</label>
+					</div>
 				</div>
-				<input id="_dz" type="range" id="cowbell" name="cowbell" min="0" max="10" value="0" step="1" />
-				<input id="_dzbox" type="text" name="ak" value="0">
-			</div>
-			<div class="row">
-				<div class="nazwa">
-					<label>
-						<input type="checkbox"> AK-47</label>
+				<div class="row">
+					<div class="nazwa">
+						<label>
+							Vodka</label>
+					</div>
+					<input id="_3" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+					<input id="_3box" type="text" name="ak" value="0">
+					<div class="nazwa">
+						<label>
+							x5 PLN</label>
+					</div>
 				</div>
-				<input id="_1" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
-				<input id="_1box" type="text" name="ak" value="0">
-			</div>
-			<div class="row">
-				<div class="nazwa">
-					<label>
-						<input type="checkbox"> RPG</label>
+				<div class="row">
+					<div class="nazwa">
+						<label>
+							Digitarjew</label>
+					</div>
+					<input id="_4" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+					<input id="_4box" type="text" name="ak" value="0">
+					<div class="nazwa">
+						<label>
+							x5 PLN</label>
+					</div>
 				</div>
-				<input id="_2" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
-				<input id="_2box" type="text" name="ak" value="0">
-			</div>
-			<div class="row">
-				<div class="nazwa">
-					<label>
-						<input type="checkbox"> Vodka</label>
+				<div class="row">
+					<div class="nazwa">
+						<label>
+							KVAS</label>
+					</div>
+					<input id="_5" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+					<input id="_5box" type="text" name="ak" value="0">
+					<div class="nazwa">
+						<label>
+							x5 PLN</label>
+					</div>
 				</div>
-				<input id="_3" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
-				<input id="_3box" type="text" name="ak" value="0">
-			</div>
-			<div class="row">
-				<div class="nazwa">
-					<label>
-						<input type="checkbox"> Digitarjew</label>
+				<div class="row">
+					<div class="nazwa">
+						<label>
+							M1A1</label>
+					</div>
+					<input id="_6" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
+					<input id="_6box" type="text" name="ak" value="0">
+					<div class="nazwa">
+						<label>
+							x5 PLN</label>
+					</div>
 				</div>
-				<input id="_4" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
-				<input id="_4box" type="text" name="ak" value="0">
 			</div>
-			<div class="row">
-				<div class="nazwa">
-					<label>
-						<input type="checkbox"> KVAS</label>
-				</div>
-				<input id="_5" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
-				<input id="_5box" type="text" name="ak" value="0">
+			<div class="orange" id="rabatAlert">AKTYWOWANO RABAT -10%!
+				<br/>
+				<u>OSZCZĘDZASZ:</u>
+				<p id="oszczedzasz"></p>
 			</div>
-			<div class="row">
-				<div class="nazwa">
-					<label>
-						<input type="checkbox"> M1A1</label>
-				</div>
-				<input id="_6" type="range" id="cowbell" name="cowbell" min="0" max="500" value="0" step="1" />
-				<input id="_6box" type="text" name="ak" value="0">
-			</div>
+			<br>
+			<label class="orange">KOSZT SZKOLENIA:</label>
+			<br>
+			<br>
+			<input id="suma" type="text" name="ak" value="100 PLN" style="width: 120px;">
 		</div>
 
-		<div class="orange" id="rabatAlert">NALICZONO RABAT -10%!</div>
-		<br>
-		<label class="orange" >SUMA:</label>
-		<br>
-		<input id="suma" type="text" name="ak" value="100 PLN" style="width: 120px;">
 	</div>
 	<div class="contact" id="kontakt">
+		<br>
 		<div class="section_title">
 			<p>KONTAKT</p>
 		</div>
@@ -272,7 +311,7 @@
 			<p>
 				<span class="orange">Zadzwoń lub wyślij e-maila</span> i zarezerwuj szkolenie już dziś!</p>
 		</div>
-		<p>sierż. Maciej Adamus</p>
+		<p>Maciej Adamus</p>
 		<p>tel: 608 585 632</p>
 		<p>e-mail: mejl-firmowy</p>
 	</div>

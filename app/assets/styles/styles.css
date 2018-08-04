@@ -9,10 +9,12 @@
 button:focus {
     outline: none;
 }
-a{
-    color:white;
+
+a {
+    color: white;
     text-decoration: none;
 }
+
 p {
     margin: 0px;
 }
@@ -39,8 +41,8 @@ wbr:after {
     .bar {
         background-image: url('assets/images/loading.png');
         background-size: cover;
-        width: 50px;
         height: 50px;
+        width: 50px;
         z-index: 5;
     }
 }
@@ -55,15 +57,18 @@ wbr:after {
     left: -200px;
     top: -200px;
 }
+
 #sub {
     font-size: 4rem;
     text-align: center;
 }
+
 #sub_2 {
     font-size: 2rem;
     font-family: hemi;
     text-align: center;
 }
+
 .landingPage {
     position: relative;
     width: 100%;
@@ -85,7 +90,9 @@ wbr:after {
             background-color: transparent;
             border: none;
             color: white;
-            padding: 20px;
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
             &:hover {
                 text-decoration: underline;
                 background-color: $mainRed;
@@ -127,10 +134,9 @@ wbr:after {
         color: rgb(219, 219, 219);
         font-family: hemi;
         img {
-            width:800px;
-            padding-bottom:35px;
+            width: 800px;
+            padding-bottom: 35px;
         }
-
         #naucz {
             font-size: 2rem;
         }
@@ -160,7 +166,6 @@ wbr:after {
 
 .oferta {
     font-size: 1.0rem;
-
     display: flex;
     position: relative;
     min-height: 100vh;
@@ -185,9 +190,10 @@ wbr:after {
 }
 
 .sections_wrapper {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .section {
     text-align: center;
     position: relative;
@@ -195,23 +201,24 @@ flex-direction: column;
     flex-direction: column;
     background-color: transparent;
     padding: 10px;
-
     &--photo {
         width: 280px;
         height: 160px;
         overflow: hidden;
-        margin:0 auto;
+        margin: 0 auto;
     }
     &--text {
-        width:320px;
+        width: 320px;
     }
 }
-.top{
+
+.top {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.bottom{
+
+.bottom {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -219,15 +226,15 @@ flex-direction: column;
         width: 280px;
         height: 160px;
         overflow: hidden;
-        margin:0 auto;
-        img{
-            width:100%;
+        margin: 0 auto;
+        img {
+            width: 100%;
         }
     }
     .section--text {
         width: 400px;
     }
-    .section{
+    .section {
         flex-direction: column;
     }
 }
@@ -237,10 +244,9 @@ flex-direction: column;
     width: 1000px;
     margin: 0 auto;
     text-align: center;
-    line-height: 2rem;
-
-    p{
-        padding-bottom:5px;
+    line-height: 1.3rem;
+    p {
+        padding-bottom: 5px;
     }
 }
 
@@ -250,11 +256,11 @@ flex-direction: column;
     margin: 0 auto;
     padding: 20px;
     color: white;
-    .top{
-        .photo{
-            width:60%;
-            img{
-                width:100%;
+    .top {
+        .photo {
+            width: 60%;
+            img {
+                width: 100%;
             }
         }
     }
@@ -262,7 +268,7 @@ flex-direction: column;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        button{
+        button {
             padding: 10px 20px;
             bottom: 30px;
             font-size: 2rem;
@@ -282,17 +288,14 @@ flex-direction: column;
     .indent_1 {
         transform: translateX(80px);
     }
-    
     .indent_2 {
         transform: translateX(60px);
     }
-    
     .indent_3 {
         transform: translateX(20px);
     }
-    
-
 }
+
 .weaponInfo {
     width: 500px;
     position: relative;
@@ -301,134 +304,148 @@ flex-direction: column;
     color: white;
     text-align: justify;
 }
+
 .arsenal {
     padding-top: 120px;
     background-color: rgba(0, 0, 0, 0.6);
 }
+
 .gallery {
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top:20px;
-    
+
     .main_image {
-        max-height: 87vh;
-        width:100%;
+        max-height: 75vh;
+        width: 70%;
         position: relative;
         margin: 0 auto;
         overflow: hidden;
-        margin-top:50px;
+
         img {
             width: 100%;
             -webkit-user-drag: none;
             -khtml-user-drag: none;
             -moz-user-drag: none;
             -o-user-drag: none;
-            user-drag: none;  
+            user-drag: none;
         }
-        .prev{
-        position: absolute;
-        opacity: 0;
-        height:100%;
-        width:40%;
-        background-color: rgba(255, 255, 255, 0.144);
-        top:0px;
-        transition: visibility 0s, opacity 0.5s linear;
+        .prev {
+            position: absolute;
+            opacity: 0;
+            height: 100%;
+            width: 40%;
+            background-color: rgba(255, 255, 255, 0.144);
+            top: 0px;
+            transition: visibility 0s, opacity 0.5s linear;
         }
-        .next{
+        .next {
             transition: visibility 0s, opacity 0.5s linear;
             position: absolute;
-            height:100%;
-            width:40%;
+            height: 100%;
+            width: 40%;
             background-color: rgba(255, 255, 255, 0.144);
-            top:0px;
-            right:0px;
+            top: 0px;
+            right: 0px;
             opacity: 0;
         }
-        .prev, .next{
-            img{
+        .prev,
+        .next {
+            img {
                 position: absolute;
-                top:50%;
-                transform:translateY(-50%);
-                height:100px;
-                opacity:0.7;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 100px;
+                opacity: 0.7;
                 pointer-events: none;
             }
-            &:hover{
-                    opacity: 1;
-
+            &:hover {
+                opacity: 1;
             }
-            -webkit-user-select: none; /* Safari */
-            -khtml-user-select: none; /* Konqueror HTML */
-              -moz-user-select: none; /* Firefox */
-               -ms-user-select: none; /* Internet Explorer/Edge */
-                   user-select: none; /* Non-prefixed version, currently
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently
                                          supported by Chrome and Opera */
-                                         -webkit-user-drag: none;
-                                         -khtml-user-drag: none;
-                                         -moz-user-drag: none;
-                                         -o-user-drag: none;
-                                         user-drag: none;                            
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
         }
     }
-    .images{
-        display:flex;
-        flex-wrap:wrap;
+    .hrLoading {
+        color: red;
+        height: 20px;
+    }
+    .images {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        width:100%;
+        width: 100%;
         margin: 0 auto;
     }
-    .thumb{
-        width:80px;
-        height:50px;
-        margin:10px;
+    .thumb {
+        width: 80px;
+        height: 50px;
+        margin: 10px;
         border: 2px solid white;
         overflow: hidden;
-        img{
-            height:100%;
+        img {
+            height: 100%;
             overflow: hidden;
             -webkit-user-drag: none;
             -khtml-user-drag: none;
             -moz-user-drag: none;
             -o-user-drag: none;
-            user-drag: none;  
-            
+            user-drag: none;
         }
-        &:hover{
-            transform:scale(1.2);
+        &:hover {
+            transform: scale(1.2);
         }
     }
 }
-.cennik{
+
+.cennik {
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 1.0rem;
-    color:white;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    .inputy{
+
+    .inputy {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 400px;
+
     }
-    .row{
+    .row {
         position: relative;
         flex-direction: row;
         display: flex;
         justify-content: space-between;
     }
-.nazwa{
-    width:100px;
-    display: flex;
+    .nazwa {
+        width: 100px;
+        display: flex;
+    }
+    #rabatAlert {
+        display: none;
+        
+    }
 }
-#rabatAlert{
-    display: none;
-}
-.suma{
-    width:auto;
-}
+.dotted{
+    border: 2px dotted rgba(255, 255, 255, 0.15);
+    padding:20px;
 }
 
 .contact {
@@ -436,32 +453,25 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
     text-align: center;
- /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+100,000000+100&0+1,1+14,1+100 */
- background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 14%, rgba(0, 0, 0, 0) 100%);
- /* FF3.6-15 */
- background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 14%, rgba(0, 0, 0, 0) 100%);
- /* Chrome10-25,Safari5.1-6 */
- background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 14%, rgba(0, 0, 0, 0) 100%);
- /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=0);
- /* IE6-9 */
-    color:white;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
     font-size: 1.2rem;
-    p{
-        margin:0 auto;
-        padding:20px;
+    p {
+        margin: 0 auto;
+        padding: 5px;
     }
 }
-.footer{
+
+.footer {
     position: relative;
     display: block;
-    width:100%;
+    width: 100%;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.596);
     text-align: center;
     font-size: 0.7rem;
-    a{
-        color: rgba(255, 255, 255, 0.9); 
+    a {
+        color: rgba(255, 255, 255, 0.9);
     }
 }
 
@@ -473,17 +483,21 @@ flex-direction: column;
     color: $mainRed;
 }
 
-.orange{
-    color:rgb(255, 160, 82);
+.orange {
+    color: rgb(255, 160, 82);
     font-weight: bold;
 }
 
 .noselect {
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
-  }
-
+}
