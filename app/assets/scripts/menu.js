@@ -2,7 +2,8 @@
 var Menu_Down = false;
 
 (window).addEventListener("mousemove", function (e) {
-
+    if($( window ).width()>400)
+{
     if (e.pageY - $(window).scrollTop() < 200) {
         if (!Menu_Down && $(window).scrollTop() > 200) {
             Menu_Down = true;
@@ -15,9 +16,13 @@ var Menu_Down = false;
         }
 
     }
+}
 });
 
 (window).addEventListener("scroll", function (e) {
+
+    if($( window ).width()>400)
+{
     if ($(window).scrollTop() < 200 && !Menu_Down) {
         $(".menu").slideDown("slow");
         Menu_Down = false;
@@ -26,5 +31,8 @@ var Menu_Down = false;
     if ($(window).scrollTop() > 200 && !Menu_Down) {
         $(".menu").slideUp("slow");
     }
+}
+
 
 });
+
