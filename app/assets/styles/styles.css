@@ -145,11 +145,11 @@ wbr:after {
         transition: color 300ms linear;
         @mixin tablet {
             position: absolute;
-            bottom: 195px;
+            bottom: 240px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 1.1rem;
-            padding: 20px 40px;
+
         }
         &:hover {
             color: $mainRed;
@@ -189,15 +189,15 @@ wbr:after {
         text-indent: 2rem;
         line-height: 1.3rem;
         position: absolute;
-        text-align: center;
+        text-align: justify;
         bottom: 45px;
-        width: 70%;
+        width: 250px;
         margin: 0 auto;
         left: 50%;
         transform: translateX(-50%);
         @mixin pc {
             left: auto;
-            width: 450px;
+            width: 400px;
             right: 100px;
             bottom: 45px;
             transform: none;
@@ -323,11 +323,12 @@ wbr:after {
 .paragraf {
     color: white;
     max-width: 1000px;
-    margin: 0 auto;
     text-align: center;
     line-height: 1.3rem;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left:50%;
+    transform:translateX(-50%);
     p {
         padding-bottom: 5px;
     }
@@ -547,19 +548,45 @@ wbr:after {
         }
     }
     .nazwa {
-        width: 100px;
-        display: flex;
+        margin:0 auto;
+        label{
+            display:block;
+        }
     }
     #rabatAlert {
         display: none;
     }
 }
-
+.pricebox{
+    background-color:rgba(37, 36, 36,0.85);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    left:50%;
+    transform: translateX(-50%);
+    padding:20px 30px 20px 30px;
+    max-width: 120px;
+    border: 2px solid orangered;
+    border-style: dotted;
+    input{
+        margin-top:10px;
+    }
+}
+#koszt{
+    height:110px;
+}
+.sztuk{
+    padding-bottom: 5px;
+}
 .dotted {
     border: 2px dotted rgba(255, 255, 255, 0.15);
 
 }
-
+.dotted_hr{
+    border: 1px dotted rgb(65, 65, 65);
+    width: 100%;
+}
 .special-transform50 {
     @mixin pc {
         transform: translateX(-50px);

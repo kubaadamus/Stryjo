@@ -487,10 +487,11 @@ input{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left:20px;
+    padding-right: 20px;
     position: relative;
     -webkit-transform:translateY(-25%);
             transform:translateY(-25%);
-
+    border: none;
     
 
 }
@@ -528,7 +529,7 @@ input[type=checkbox] {
 input[type=range]::-webkit-slider-runnable-track {
     width: 300px;
     height: 5px;
-    background: rgba(255, 255, 255, 0.658);
+    background:rgb(77, 76, 76);
     border: none;
     border-radius: 3px;
 }
@@ -538,14 +539,14 @@ input[type=range]::-webkit-slider-thumb {
     border: none;
     height: 16px;
     width: 16px;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 187, 0);
     margin-top: -4px;
 }
 
 input[type=text]{
     width:60px;
     height:1rem;
-    margin:0px;
+    margin:0 auto;
     padding: 0px;
     color: white;
     border: 1px solid white;
@@ -728,12 +729,11 @@ wbr:after {
 
   .landingPage .ofertaBtn {
     position: absolute;
-    bottom: 195px;
+    bottom: 240px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     font-size: 1.1rem;
-    padding: 20px 40px;
   }
 }
 
@@ -784,9 +784,9 @@ wbr:after {
   text-indent: 2rem;
   line-height: 1.3rem;
   position: absolute;
-  text-align: center;
+  text-align: justify;
   bottom: 45px;
-  width: 70%;
+  width: 250px;
   margin: 0 auto;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -797,7 +797,7 @@ wbr:after {
 
   .landingPage .opis {
     left: auto;
-    width: 450px;
+    width: 400px;
     right: 100px;
     bottom: 45px;
     -webkit-transform: none;
@@ -997,11 +997,13 @@ wbr:after {
 .paragraf {
     color: white;
     max-width: 1000px;
-    margin: 0 auto;
     text-align: center;
     line-height: 1.3rem;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left:50%;
+    -webkit-transform:translateX(-50%);
+            transform:translateX(-50%);
 }
 
 .paragraf p {
@@ -1310,19 +1312,57 @@ wbr:after {
 }
 
 .cennik .nazwa {
-  width: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin:0 auto;
+}
+
+.cennik .nazwa label{
+  display:block;
 }
 
 .cennik #rabatAlert {
   display: none;
 }
 
+.pricebox{
+    background-color:rgba(37, 36, 36,0.85);
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin:0 auto;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding:20px 30px 20px 30px;
+    max-width: 120px;
+    border: 2px solid orangered;
+    border-style: dotted;
+}
+
+.pricebox input{
+  margin-top:10px;
+}
+
+#koszt{
+    height:110px;
+}
+
+.sztuk{
+    padding-bottom: 5px;
+}
+
 .dotted {
     border: 2px dotted rgba(255, 255, 255, 0.15);
 
+}
+
+.dotted_hr{
+    border: 1px dotted rgb(65, 65, 65);
+    width: 100%;
 }
 
 @media (min-width: 1000px) {
