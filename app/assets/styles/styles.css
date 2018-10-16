@@ -584,17 +584,17 @@ wbr:after {
     }
 }
 #koszt{
-    height:110px;
+    height:140px;
 }
 .sztuk{
     padding-bottom: 5px;
 }
-.dotted {
-    border: 2px dotted rgba(255, 255, 255, 0.15);
+.dotted, .dotted_hr{
+    border: 2px dotted rgb(255, 0, 0);
 
 }
 .dotted_hr{
-    border: 1px dotted rgb(65, 65, 65);
+
     width: 100%;
 }
 .special-transform50 {
@@ -608,7 +608,14 @@ wbr:after {
         transform: translateX(-95px);
     }
 }
-
+.cennikpdf{
+    margin-top: 20px;
+    img{
+        width:50px;
+        display:block;
+        margin:0 auto;
+    }
+}
 .contact {
     padding-top: 20px;
     display: flex;

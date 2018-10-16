@@ -41,6 +41,20 @@ function debug_to_console( $data ) {
 		} else {
 		  echo 'not conected';
 		}
+
+		echo "<br>";
+
+		if ($response->num_rows > 0) {
+			// output data of each row
+			$lp=1;
+			while($row = $response->fetch_assoc()) {
+				echo $lp." | Date: " . $row["date"]. " - Ip: " . $row["ip"]."<br>";
+				$lp+=1;
+			}
+		} else {
+			echo "<br>0 results";
+		}
+
 ?>
 
 

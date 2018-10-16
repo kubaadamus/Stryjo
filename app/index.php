@@ -254,7 +254,7 @@ function debug_to_console( $data ) {
 
 		</div>
 	</div>
-	<div class="cennik hidden">
+	<div class="cennik">
 		<br>
 		<br>
 		<br>
@@ -267,8 +267,57 @@ function debug_to_console( $data ) {
 		<div class="dotted">
 			
 			<div class="inputy">
+				<!-SKŁAD OSOBOWY-!>
 
+				<div class="nazwa">
+					<label>
+							Stanowisko strzeleckie 25m
+					</label>
+					<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+				</div>
+				<input id="_10" type="range" id="cowbell" name="cowbell" min="0" max="5" value="0" step="1" />
+				<label class="sztuk">sztuk</label>
+				<input id="_10box" type="text" name="25m" value="0">
+				<label id="_10cena">CENA</label>
+				<hr class="dotted_hr">
 
+				<div class="nazwa">
+					<label>
+							Stanowisko strzeleckie 50m
+					</label>
+					<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+				</div>
+				<input id="_11" type="range" id="cowbell" name="cowbell" min="0" max="5" value="0" step="1" />
+				<label class="sztuk">sztuk</label>
+				<input id="_11box" type="text" name="25m" value="0">
+				<label id="_11cena">CENA</label>
+				<hr class="dotted_hr">
+
+				<div class="nazwa">
+					<label>
+						Trening z instruktorem strzelectwa praktycznego <br/> 1 osoba / 2 godziny
+					</label>
+					<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+				</div>
+				<input id="_13" type="range" id="cowbell" name="cowbell" min="0" max="5" value="0" step="1" />
+				<label class="sztuk">sztuk</label>
+				<input id="_13box" type="text" name="25m" value="0">
+				<label id="_13cena">CENA</label>
+				<hr class="dotted_hr">
+
+				<div class="nazwa">
+					<label>
+							Tarcza strzelecka
+					</label>
+					<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+				</div>
+				<input id="_14" type="range" id="cowbell" name="cowbell" min="0" max="50" value="0" step="1" />
+				<label class="sztuk">sztuk</label>
+				<input id="_14box" type="text" name="25m" value="0">
+				<label id="_14cena">CENA</label>
+				<hr class="dotted_hr">
+
+				<!- AMUNICJA -!>
 				<div class="nazwa">
 					<label>
 							.22LR Karabin Sportowy (min. 25 szt.)
@@ -383,12 +432,15 @@ function debug_to_console( $data ) {
 			</div>
 			<div id="koszt"></div>
 			<div class="pricebox" id="pricebox">
-					<label class="orange" >KOSZT SZKOLENIA:</label>
+					<label class="orange" >PRZYBLIŻONY KOSZT SZKOLENIA:</label>
 					<input id="suma" type="text" name="ak" value="00.00 PLN" style="width: 120px;">
 			</div>
-			<p>
-					* Mile widziane rodziny (rabat 10%).
-				</p>
+		</div>
+
+		<div class="cennikpdf">
+			<a href="cennikpdf.pdf" id="link">Pobierz cennik w formie PDF</a>
+			<img src="assets/images/document.png" alt="">
+			
 		</div>
 
 	</div>
