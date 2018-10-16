@@ -598,7 +598,7 @@ wbr:after {
     z-index: 100;
 }
 
-.loading .bar {
+.loading .bar{
   position: relative;
   height: 50px;
   width: 50px;
@@ -607,6 +607,17 @@ wbr:after {
   background-image: url('assets/images/loading.png');
   background-size: cover;
   z-index: 5;
+}
+
+.loading .visitCounter{
+  position: relative;
+  height: 50px;
+  top: 50%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 5;
+  color:white;
+  font-size: 25px;
 }
 
 /* ============================================= S E K C J E =========================================== */
