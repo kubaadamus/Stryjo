@@ -429,6 +429,22 @@ function debug_to_console( $data ) {
 				<input id="_9box" type="text" name="ak" value="0">
 				<label id="_9cena">CENA</label>
 				<hr class="dotted_hr">
+
+
+
+				<div class="nazwa">
+					<label>
+							BRENEKA
+					</label>
+					<img src="assets/images/ammo/10-breneka.png" alt="">
+				</div>
+				<input id="_breneka" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+				<label class="sztuk">sztuk</label>
+				<input id="_brenekabox" type="text" name="ak" value="0">
+				<label id="_breneka_cena">CENA</label>
+				<hr class="dotted_hr">
+
+
 			</div>
 			<div id="koszt"></div>
 			<div class="pricebox" id="pricebox">
