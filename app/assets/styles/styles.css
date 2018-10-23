@@ -567,6 +567,12 @@ wbr:after {
         display: none;
     }
 }
+
+.element
+{
+    display: flex;
+    flex-direction: column;
+}
 .pricebox{
     background-color:rgba(37, 36, 36,0.85);
     position: absolute;

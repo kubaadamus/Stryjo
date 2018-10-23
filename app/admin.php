@@ -47,13 +47,27 @@ function debug_to_console( $data ) {
 		if ($response->num_rows > 0) {
 			// output data of each row
 			$lp=1;
+			$moje_odwiedziny=0;
 			while($row = $response->fetch_assoc()) {
-				echo $lp." | Date: " . $row["date"]. " - Ip: " . $row["ip"]."<br>";
-				$lp+=1;
+				if(strpos($row["ip"], "89.229.95.") === false)
+				{
+					echo $lp." | Date: " . $row["date"]. " - Ip: " . $row["ip"]."<br>";
+					$lp+=1;
+				}
+				else{
+					$moje_odwiedziny++;
+				}
+
 			}
 		} else {
 			echo "<br>0 results";
 		}
+
+		echo "W tym odwiedziny od Kuba: ".$moje_odwiedziny."<br/>";
+
+		echo "Wiec stronę odwiedziło: ";
+		echo $visitors-$moje_odwiedziny;
+		echo " osób.";
 
 ?>
 

@@ -9,74 +9,16 @@
 </head>
 
 
-<?php
-function debug_to_console( $data ) {
-    $output = $data;
-    if ( is_array( $output ) )
-        $output = implode( ',', $output);
 
-    echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
-}
-    	$login = 'testLogin';
-		$pass = 'testPass';
-		//$ipaddress = $_SERVER['REMOTE_ADDR'];
-
-		$user = 'jakubadamus';
-		$DBpassword = 'Kubaadamus1991';
-		$db = 'jakubadamus';
-		$host = 'mysql.cba.pl';
-		$port = 3360;
-
-		function get_client_ip_env() {
-			$ipaddress = '';
-			if (getenv('HTTP_CLIENT_IP'))
-				$ipaddress = getenv('HTTP_CLIENT_IP');
-			else if(getenv('HTTP_X_FORWARDED_FOR'))
-				$ipaddress = getenv('HTTP_X_FORWARDED_FOR');
-			else if(getenv('HTTP_X_FORWARDED'))
-				$ipaddress = getenv('HTTP_X_FORWARDED');
-			else if(getenv('HTTP_FORWARDED_FOR'))
-				$ipaddress = getenv('HTTP_FORWARDED_FOR');
-			else if(getenv('HTTP_FORWARDED'))
-				$ipaddress = getenv('HTTP_FORWARDED');
-			else if(getenv('REMOTE_ADDR'))
-				$ipaddress = getenv('REMOTE_ADDR');
-			else
-				$ipaddress = 'UNKNOWN';
-		 
-			return $ipaddress;
-		}
-
-		$ipa = get_client_ip_env();
-
-		$database = mysqli_connect($host,$user,$DBpassword,$db) OR die('Niedaradyyy' . mysqli_connect_error());
-
-		$query = "INSERT INTO `visit_counter` (`date`, `ip`) VALUES (NOW(), '".$ipa."')";
-
-		mysqli_query($database,$query);
-
-		$query2 = "SELECT * FROM visit_counter";
-
-		$response = mysqli_query($database,$query2);
-
-		$visitors = mysqli_num_rows($response);
-
-		echo $visitors;
-		
-
-        if ($database) {
-		  echo 'conected';
-		} else {
-		  echo 'not conected';
-		}
-?>
+<?php include 'indexPhpScript.php';?>
 
 
 
 <body>
 	<div class="loading">
 		<div class="bar rotating"></div>
-		<div class="visitCounter">Witamy<br/> <?php echo $visitors; ?>-go <br/> odwiedzajacego!</div>
+		<div class="visitCounter">Witamy<br />
+			<?php echo $visitors; ?>-go <br /> odwiedzajacego!</div>
 	</div>
 	<div class="landingPage" id="home">
 		<img class="campfire" src="assets/images/campfire_anim.gif" alt="">
@@ -169,8 +111,8 @@ function debug_to_console( $data ) {
 						<img src="assets/images/campfire.jpeg" alt="" class="">
 					</div>
 					<div class="section section--text">
-						<p>Po dniu pełnym wrażeń,
-							<span class="orange">zrelaksujesz się przy </span>ognisku dzieląc się wrażeniami z ekipą.</p>
+						<p>Po szkoleniu pełnym wrażeń,
+							<span class="orange">zrelaksujesz się przy </span>ognisku i podzielisz wrażeniami z ekipą.</p>
 					</div>
 				</div>
 			</div>
@@ -263,201 +205,247 @@ function debug_to_console( $data ) {
 		</div>
 
 		<br>
-		<p>BROŃ I AMUNICJA:</p> <br/>
+		<p>BROŃ I AMUNICJA:</p> <br />
 		<div class="dotted">
-			
+
 			<div class="inputy">
 				<!-SKŁAD OSOBOWY-!>
 
-				<div class="nazwa">
-					<label>
+				<div class="element hidden">
+					<div class="nazwa">
+						<label>
 							Stanowisko strzeleckie 25m
-					</label>
-					<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+						</label>
+						<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+					</div>
+					<input id="_10" type="range" id="cowbell" name="cowbell" min="0" max="5" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_10box" type="text" name="25m" value="0">
+					<label id="_10cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_10" type="range" id="cowbell" name="cowbell" min="0" max="5" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_10box" type="text" name="25m" value="0">
-				<label id="_10cena">CENA</label>
-				<hr class="dotted_hr">
 
-				<div class="nazwa">
-					<label>
+				<div class="element hidden">
+					<div class="nazwa">
+						<label>
 							Stanowisko strzeleckie 50m
-					</label>
-					<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+						</label>
+						<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+					</div>
+					<input id="_11" type="range" id="cowbell" name="cowbell" min="0" max="5" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_11box" type="text" name="25m" value="0">
+					<label id="_11cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_11" type="range" id="cowbell" name="cowbell" min="0" max="5" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_11box" type="text" name="25m" value="0">
-				<label id="_11cena">CENA</label>
-				<hr class="dotted_hr">
 
-				<div class="nazwa">
-					<label>
-						Trening z instruktorem strzelectwa praktycznego <br/> 1 osoba / 2 godziny
-					</label>
-					<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+				<div class="element hidden">
+					<div class="nazwa">
+						<label>
+							Trening z instruktorem strzelectwa praktycznego <br /> 1 osoba / 2 godziny
+						</label>
+						<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+					</div>
+					<input id="_13" type="range" id="cowbell" name="cowbell" min="0" max="5" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_13box" type="text" name="25m" value="0">
+					<label id="_13cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_13" type="range" id="cowbell" name="cowbell" min="0" max="5" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_13box" type="text" name="25m" value="0">
-				<label id="_13cena">CENA</label>
-				<hr class="dotted_hr">
 
-				<div class="nazwa">
-					<label>
+				<div class="element hidden">
+
+					<div class="nazwa">
+						<label>
 							Tarcza strzelecka
-					</label>
-					<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+						</label>
+						<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+					</div>
+					<input id="_14" type="range" id="cowbell" name="cowbell" min="0" max="50" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_14box" type="text" name="25m" value="0">
+					<label id="_14cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_14" type="range" id="cowbell" name="cowbell" min="0" max="50" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_14box" type="text" name="25m" value="0">
-				<label id="_14cena">CENA</label>
-				<hr class="dotted_hr">
 
-				<!- AMUNICJA -!>
-				<div class="nazwa">
-					<label>
+
+				<div class="element">
+
+					<div class="nazwa">
+						<label>
+							Podstawowe szkolenie z instruktorem - opłata stała 90,00 zł./ osobę (w tym szkolenie z zasad B.L.O.S. oraz zapoznanie z bronią)
+						</label>
+						<!img src="assets/images/ammo/1-22lr.png" alt=""!>
+					</div>
+					<input id="_15" type="range" id="cowbell" name="cowbell" min="0" max="5" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_15box" type="text" name="25m" value="0">
+					<label id="_15cena">CENA</label>
+					<hr class="dotted_hr">
+				</div>
+
+				<div class="element">
+
+					<!- AMUNICJA -!>
+					<div class="nazwa">
+						<label>
 							.22LR Karabin Sportowy (min. 25 szt.)
-					</label>
-					<img src="assets/images/ammo/1-22lr.png" alt="">
+						</label>
+						<img src="assets/images/ammo/1-22lr.png" alt="">
+					</div>
+					<input id="_1" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_1box" type="text" name="ak" value="0">
+					<label id="_1cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_1" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_1box" type="text" name="ak" value="0">
-				<label id="_1cena">CENA</label>
-				<hr class="dotted_hr">
 
 
-				<div class="nazwa">
-					<label>
-							Pistolet  Sportowy 9mm (min. 20 szt.)
-					</label>
-					<img src="assets/images/ammo/2-9mmsport.png" alt="">
+				<div class="element">
+					<div class="nazwa">
+						<label>
+							Pistolet Sportowy 9mm (min. 20 szt.)
+						</label>
+						<img src="assets/images/ammo/2-9mmsport.png" alt="">
+					</div>
+					<input id="_2" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_2box" type="text" name="ak" value="0">
+					<label id="_2cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_2" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_2box" type="text" name="ak" value="0">
-				<label id="_2cena">CENA</label>
-				<hr class="dotted_hr">
 
 
-				<div class="nazwa">
-					<label>
+				<div class="element">
+					<div class="nazwa">
+						<label>
 							Rewolwer .38 Special (min. 15 szt.)
-					</label>
-					<img src="assets/images/ammo/3-rew38.png" alt="">
+						</label>
+						<img src="assets/images/ammo/3-rew38.png" alt="">
+					</div>
+					<input id="_3" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_3box" type="text" name="ak" value="0">
+					<label id="_3cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_3" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_3box" type="text" name="ak" value="0">
-				<label id="_3cena">CENA</label>
-				<hr class="dotted_hr">
 
-				<div class="nazwa">
-					<label>
+				<div class="element">
+					<div class="nazwa">
+						<label>
 							Karabinek AK (min. 10 szt.)
-					</label>
-					<img src="assets/images/ammo/4-akkarabinek.png" alt="">
+						</label>
+						<img src="assets/images/ammo/4-akkarabinek.png" alt="">
+					</div>
+					<input id="_4" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_4box" type="text" name="ak" value="0">
+					<label id="_4cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_4" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_4box" type="text" name="ak" value="0">
-				<label id="_4cena">CENA</label>
-				<hr class="dotted_hr">
 
-				<div class="nazwa">
-					<label>
+				<div class="element">
+					<div class="nazwa">
+						<label>
 							Pistolet masz. PPSz-a 7,62x 25mm
-					</label>
-					<img src="assets/images/ammo/5-ppsz.png" alt="">
+						</label>
+						<img src="assets/images/ammo/5-ppsz.png" alt="">
+					</div>
+					<input id="_5" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_5box" type="text" name="ak" value="0">
+					<label id="_5cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_5" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_5box" type="text" name="ak" value="0">
-				<label id="_5cena">CENA</label>
-				<hr class="dotted_hr">
 
 
-				<div class="nazwa">
-					<label>
+				<div class="element">
+					<div class="nazwa">
+						<label>
 							Karabinek 5,56 (min. 10 szt.)
-					</label>
-					<img src="assets/images/ammo/6-556karabinek.png" alt="">
+						</label>
+						<img src="assets/images/ammo/6-556karabinek.png" alt="">
+					</div>
+					<input id="_6" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_6box" type="text" name="ak" value="0">
+					<label id="_6cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_6" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_6box" type="text" name="ak" value="0">
-				<label id="_6cena">CENA</label>
-				<hr class="dotted_hr">
 
 
-				<div class="nazwa">
-					<label>
+				<div class="element">
+					<div class="nazwa">
+						<label>
 							Karabin MOSIN i DP (min. 10 szt.)
-					</label>
-					<img src="assets/images/ammo/7-mosin.png" alt="">
+						</label>
+						<img src="assets/images/ammo/7-mosin.png" alt="">
+					</div>
+					<input id="_7" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_7box" type="text" name="ak" value="0">
+					<label id="_7cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_7" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_7box" type="text" name="ak" value="0">
-				<label id="_7cena">CENA</label>
-				<hr class="dotted_hr">
 
-				<div class="nazwa">
-					<label>
+				<div class="element">
+					<div class="nazwa">
+						<label>
 							Strzelba gładko lufowa 12mm (min. 10 szt.) lub Breneka
-					</label>
-					<img src="assets/images/ammo/8-gladka12.png" alt="">
+						</label>
+						<img src="assets/images/ammo/8-gladka12.png" alt="">
+					</div>
+					<input id="_8" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_8box" type="text" name="ak" value="0">
+					<label id="_8cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_8" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_8box" type="text" name="ak" value="0">
-				<label id="_8cena">CENA</label>
-				<hr class="dotted_hr">
 
-				<div class="nazwa">
-					<label>
+				<div class="element">
+					<div class="nazwa">
+						<label>
 							LOFTKA
-					</label>
-					<img src="assets/images/ammo/9-loftka.png" alt="">
+						</label>
+						<img src="assets/images/ammo/9-loftka.png" alt="">
+					</div>
+					<input id="_9" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_9box" type="text" name="ak" value="0">
+					<label id="_9cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_9" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_9box" type="text" name="ak" value="0">
-				<label id="_9cena">CENA</label>
-				<hr class="dotted_hr">
 
 
+				<div class="element">
 
-				<div class="nazwa">
-					<label>
+					<div class="nazwa">
+						<label>
 							BRENEKA
-					</label>
-					<img src="assets/images/ammo/10-breneka.png" alt="">
+						</label>
+						<img src="assets/images/ammo/10-breneka.png" alt="">
+					</div>
+					<input id="_breneka" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
+					<label class="sztuk">sztuk</label>
+					<input id="_brenekabox" type="text" name="ak" value="0">
+					<label id="_breneka_cena">CENA</label>
+					<hr class="dotted_hr">
 				</div>
-				<input id="_breneka" type="range" id="cowbell" name="cowbell" min="0" max="150" value="0" step="1" />
-				<label class="sztuk">sztuk</label>
-				<input id="_brenekabox" type="text" name="ak" value="0">
-				<label id="_breneka_cena">CENA</label>
-				<hr class="dotted_hr">
 
 
 			</div>
 			<div id="koszt"></div>
 			<div class="pricebox" id="pricebox">
-					<label class="orange" >PRZYBLIŻONY KOSZT SZKOLENIA:</label>
-					<input id="suma" type="text" name="ak" value="00.00 PLN" style="width: 120px;">
+				<label class="orange">PRZYBLIŻONY KOSZT SZKOLENIA:</label>
+				<input id="suma" type="text" name="ak" value="00.00 PLN" style="width: 120px;">
 			</div>
 		</div>
 
 		<div class="cennikpdf">
-			<a href="cennikpdf.pdf" id="link">Pobierz cennik w formie PDF</a>
-			<img src="assets/images/document.png" alt="">
-			
+			<a id="link" href="cennikpdf.pdf" >Pobierz cennik w formacie PDF <img id="link" src="assets/images/document.png" alt=""></a>
+			<a id="link" href="regulaminpdf.pdf" >Pobierz regulamin w formacie PDF <img id="link" src="assets/images/document2.png" alt=""></a>
 		</div>
+		
 
 	</div>
 	<div class="contact" id="kontakt">
@@ -490,4 +478,3 @@ function debug_to_console( $data ) {
 
 
 </html>
-

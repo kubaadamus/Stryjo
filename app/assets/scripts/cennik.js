@@ -16,37 +16,39 @@ var _13;
 var _14;
 
 //ceny
-var _1cena1 = 1.50;
-var _2cena1 = 2.50;
-var _3cena1 = 4.00;
-var _4cena1 = 4.00;
-var _5cena1 = 4.00;
-var _6cena1 = 4.00;
-var _7cena1 = 7.00;
-var _8cena1 = 2.50;
-var _9cena1 = 5.50;
-var _breneka_cena1 = 8.00;
-var _10cena1 = 40.00;
-var _11cena1 = 50.00;
-//var _12cena1 = 50.00;
-var _13cena1 = 150.00;
-var _14cena1 = 1.00;
+var _1cena1 = 0.90; // .22LR Karabin sportowy
+var _2cena1 = 1.50; // Pistolet sportwy 9x19PARA
+var _3cena1 = 2.20; // Rewolwer .38 special
+var _4cena1 = 2.00; // Karabinek AKMS 7.62mm
+var _5cena1 = 2.00; //Pistolet masz. PPSZ=a 7-62x 25mm
+var _6cena1 = 2.00; // Karabinek DB 5.56mm
+var _7cena1 = 3.50; // Karabin MOSIN i DP 7,62mm
+var _8cena1 = 2.00; //Strzelba gładko lufowa 12/70 TRAP SPECIAL
+var _9cena1 = 3.50; //Strzelba gladko lufowa 12/70 LOFTKA
+var _breneka_cena1 = 4.50; //Strzelba gładko lufowa 12/70 Breneka W8
+var _10cena1 = 40.00;   //stanowisko strzeleckie 25m
+var _11cena1 = 50.00;   //stanowisko strzeleckie 50m
+//var _12cena1 = 50.00; //stanowisko strzeleckie 50m karabin sportowy
+var _13cena1 = 150.00;  //trening z instruktorem strzelectwa praktycznego 1 osoba/2h
+var _14cena1 = 1.00;    //tarcza strzelecka
+var _15cena1 = 90.00;    //Podstawowe szkolenie z instruktorem
 //ceny powyzej 50 sztuk
-var _1cena2 = 1.20;
-var _2cena2 = 2.00;
-var _3cena2 = 3.00;
-var _4cena2 = 3.00;
-var _5cena2 = 3.00;
-var _6cena2 = 3.00;
-var _7cena2 = 6.00;
-var _8cena2 = 2.00;
-var _9cena2 = 5.00;
-var _breneka_cena2 = 8.00;
-var _10cena2 = 40.00;
-var _11cena2 = 50.00;
-//var _12cena2 = 50.00;
-var _13cena2 = 150.00;
-var _14cena2 = 1.00;
+var _1cena2 = 0.90; // .22LR Karabin sportowy
+var _2cena2 = 1.50; // Pistolet sportwy 9x19PARA
+var _3cena2 = 2.20; // Rewolwer .38 special
+var _4cena2 = 2.00; // Karabinek AKMS 7.62mm
+var _5cena2 = 2.00; //Pistolet masz. PPSZ=a 7-62x 25mm
+var _6cena2 = 2.00; // Karabinek DB 5.56mm
+var _7cena2 = 3.50; // Karabin MOSIN i DP 7,62mm
+var _8cena2 = 2.00; //Strzelba gładko lufowa 12/70 TRAP SPECIAL
+var _9cena2 = 3.50; //Strzelba gladko lufowa 12/70 LOFTKA
+var _breneka_cena2 = 4.50; //Strzelba gładko lufowa 12/70 Breneka W8
+var _10cena2 = 40.00;   //stanowisko strzeleckie 25m
+var _11cena2 = 50.00;   //stanowisko strzeleckie 50m
+//var _12cena2 = 50.00; //stanowisko strzeleckie 50m karabin sportowy
+var _13cena2 = 150.00;  //trening z instruktorem strzelectwa praktycznego 1 osoba/2h
+var _14cena2 = 1.00;    //tarcza strzelecka
+var _15cena2 = 90.00;    //Podstawowe szkolenie z instruktorem
 
 var sufix = " PLN/sztuka"
 //Początkowe naliczenie sumy
@@ -65,9 +67,10 @@ _11 = $("#_11box").attr('value');
 //_12 = $("#_12box").attr('value');
 _13 = $("#_13box").attr('value');
 _14 = $("#_14box").attr('value');
+_15 = $("#_15box").attr('value');
 //Uaktualnienie cen w podglądzie
     //Uaktualnianie ceny w podglądzie
-    document.getElementById("_1cena").innerHTML = ((_1 < 50) ? _1cena1.toPrecision(3) : _1cena2.toPrecision(3)) + sufix;
+    document.getElementById("_1cena").innerHTML = ((_1 < 50) ? _1cena1.toPrecision(2) : _1cena2.toPrecision(2)) + sufix;
     document.getElementById("_2cena").innerHTML = ((_2 < 50) ? _2cena1.toPrecision(3) : _2cena2.toPrecision(3)) + sufix;
     document.getElementById("_3cena").innerHTML = ((_3 < 50) ? _3cena1.toPrecision(3) : _3cena2.toPrecision(3)) + sufix;
     document.getElementById("_4cena").innerHTML = ((_4 < 50) ? _4cena1.toPrecision(3) : _4cena2.toPrecision(3)) + sufix;
@@ -82,6 +85,7 @@ _14 = $("#_14box").attr('value');
     //document.getElementById("_12cena").innerHTML = ((_12 < 50) ? _12cena1 : _12cena2) + sufix;
     document.getElementById("_13cena").innerHTML = ((_13 < 50) ? _13cena1.toPrecision(3) : _13cena2.toPrecision(3)) + sufix;
     document.getElementById("_14cena").innerHTML = ((_14 < 50) ? _14cena1.toPrecision(3) : _14cena2.toPrecision(3)) + sufix;
+    document.getElementById("_15cena").innerHTML = ((_15 < 50) ? _15cena1.toPrecision(3) : _15cena2.toPrecision(3)) + sufix;
 
 var suma;
 var rabat = false;
@@ -127,9 +131,10 @@ $('input[type=range]').bind('input', function (evt) {
     //_12 = $("#_12box").attr('value');
     _13 = $("#_13box").attr('value');
     _14 = $("#_14box").attr('value');
+    _15 = $("#_15box").attr('value');
 
     //Uaktualnianie ceny w podglądzie
-    document.getElementById("_1cena").innerHTML = ((_1 < 50) ? _1cena1.toPrecision(3) : _1cena2.toPrecision(3)) + sufix;
+    document.getElementById("_1cena").innerHTML = ((_1 < 50) ? _1cena1.toPrecision(2) : _1cena2.toPrecision(2)) + sufix;
     document.getElementById("_2cena").innerHTML = ((_2 < 50) ? _2cena1.toPrecision(3) : _2cena2.toPrecision(3)) + sufix;
     document.getElementById("_3cena").innerHTML = ((_3 < 50) ? _3cena1.toPrecision(3) : _3cena2.toPrecision(3)) + sufix;
     document.getElementById("_4cena").innerHTML = ((_4 < 50) ? _4cena1.toPrecision(3) : _4cena2.toPrecision(3)) + sufix;
@@ -144,7 +149,7 @@ $('input[type=range]').bind('input', function (evt) {
     //document.getElementById("_12cena").innerHTML = ((_12 < 50) ? _12cena1 : _12cena2) + sufix;
     document.getElementById("_13cena").innerHTML = ((_13 < 50) ? _13cena1.toPrecision(3) : _13cena2.toPrecision(3)) + sufix;
     document.getElementById("_14cena").innerHTML = ((_14 < 50) ? _14cena1.toPrecision(3) : _14cena2.toPrecision(3)) + sufix;
-
+    document.getElementById("_15cena").innerHTML = ((_15 < 50) ? _15cena1.toPrecision(3) : _15cena2.toPrecision(3)) + sufix;
 
     //Naliczanie sumy
 
@@ -163,7 +168,8 @@ $('input[type=range]').bind('input', function (evt) {
         _11 * ((_11 < 50) ? _11cena1 : _11cena2)+
         //_12 * ((_12 < 50) ? _12cena1 : _12cena2)+
         _13 * ((_13 < 50) ? _13cena1 : _13cena2)+
-        _14 * ((_14 < 50) ? _14cena1 : _14cena2)
+        _14 * ((_14 < 50) ? _14cena1 : _14cena2)+
+        _15 * ((_15 < 50) ? _15cena1 : _15cena2)
     );
 
 
